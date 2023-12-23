@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH -J RNN_specialization_Q
+#SBATCH -p general
+#SBATCH -A r00639
+#SBATCH -o %j_output.txt
+#SBATCH -e %j_errors.err
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=jctanner@iu.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=0-48:00:00
+#SBATCH --mem=64G
+#SBATCH --cpus-per-task=5
+
+
+#Load any modules that your program needs
+module load python/gpu/3.10.10
+
+#Run your program
+srun python main.py
