@@ -582,6 +582,168 @@ def train_simultaneous_integration(tasks,steps,lr):
             
     return net, loss_trajectory
 
+def get_accuracy_integration(net,tasks,hidden_size):
+    """function to train the model on multiple tasks.
+   
+    Args:
+        net: a pytorch nn.Module module
+        dataset: a dataset object that when called produce a (input, target output) pair
+   
+    Returns:
+        net: network object after training
+    """
+    
+    if torch.cuda.is_available(): 
+        dev = "cuda:0" 
+        print(dev)
+    else: 
+        dev = "cpu" 
+        print(dev)
+    device = torch.device(dev) 
+    # set tasks
+    dt = 100
+    #tasks = ["SineWavePred-v0","GoNogo-v0","PerceptualDecisionMaking-v0"]
+    
+    #tasks = ["GoNogo-v0","PerceptualDecisionMaking-v0"]
+    num_tasks = len(tasks)
+    kwargs = {'dt': dt}
+    seq_len = 100
+
+    # Make supervised datasets
+    i1 = np.zeros([num_tasks])
+    o1 = np.zeros([num_tasks])
+    dataset1 = {}
+    for task in range(num_tasks):
+      
+        dataset1[task] = ngym.Dataset(tasks[task], env_kwargs=kwargs, batch_size=16,
+                       seq_len=seq_len)
+       
+                   #get input and output sizes for different tasks
+        env = dataset1[task].env
+        i1[task] = env.observation_space.shape[0]
+        try:
+            o1[task] = int(env.action_space.n)
+        except:
+            o1[task] = int(env.action_space.shape[0])
+
+
+    input_size = int(np.sum(i1))
+    #to create a tensor object that is AxBxCxD.. etc
+    output_size = int(np.prod(o1))
+    hidden_size = 100
+   
+   
+    net = RNNNet(input_size=input_size, hidden_size=hidden_size,
+             output_size=output_size, dt=dt)
+   
+    net.to(device)
+    '''
+        #apply pruning mask
+    mask = torch.from_numpy(mask).to(device)
+    apply = prune.custom_from_mask(net.rnn.h2h, name = "weight", mask = mask)
+    '''
+
+
+    
+ 
+    accuracy_bunch = []
+
+    steps = 200
+
+    for i in range(steps):
+        # Generate input and target(labels) for all tasks, then concatenate and convert to pytorch tensor
+        
+        
+        
+        timing = {
+            'fixation': 100,
+            'stimulus': 2000,
+            'delay': np.random.randint(200,high=600),
+            'decision': 100}
+        kwargs = {'dt': dt, 'timing':timing}
+        
+        for task in range(num_tasks):
+            dataset1[task] = ngym.Dataset(tasks[task], env_kwargs=kwargs, batch_size=16,
+                       seq_len=seq_len)
+            data = dataset1[task]
+            inputs1, labels1 = data()
+            
+            if task == 0:
+                inputs = inputs1
+            else:
+                inputs = np.concatenate((inputs,inputs1), axis=2)
+                
+            if task == 0:
+                labels = labels1
+                labels = np.expand_dims(labels, axis=2)
+            else:
+                labels1 = np.expand_dims(labels1, axis=2)
+                labels = np.concatenate((labels,labels1), axis=2)
+            
+                
+        inputs = torch.from_numpy(inputs).type(torch.float).to(device)
+        
+        
+        new_labels = np.zeros(labels1.shape)
+        for ii in range(labels.shape[0]):
+            for batch in range(labels.shape[1]):
+                L = labels[ii,batch,:]
+                
+                
+
+                label_tensor = np.zeros(tuple(o1.astype(int)))
+                label_tensor[tuple(L)] = 1
+                
+                label_tensor = label_tensor.flatten()
+                ind = np.nonzero(label_tensor)
+                new_labels[ii,batch] = ind[0]
+            
+            
+        labels = torch.from_numpy(new_labels.flatten()).type(torch.long).to(device)
+
+        #for task in range(num_tasks):
+            
+
+
+        output, _ = net(inputs)
+        # Reshape to (SeqLen x Batch, OutputSize)
+        output = output.view(-1, output_size)
+       
+        # Assuming outputs and labels are already defined:
+        predicted_labels = torch.argmax(output, dim=1)
+
+        # Create a mask where predicted_labels are not 0 or 12 (which are fixation outputs that shouldn't be counted)
+        fixations = [0]
+        masks = []
+        for task in range(num_tasks):
+            if task > 0:
+                fixations.append(int(i1[task-1])+1)
+            masks.append(predicted_labels != fixations[task])
+
+        if num_tasks == 3:
+            mask = masks[0] & masks[1] & masks[2]
+        elif num_tasks == 2:
+            mask = masks[0] & masks[1]
+
+        # Use the mask to filter predicted_labels and labels
+        filtered_preds = predicted_labels[mask]
+        filtered_labels = labels[mask]
+        
+        
+        accuracy_bunch.append(np.nanmean((filtered_preds == filtered_labels).float()))
+
+    print("accuracy bunch: ",accuracy_bunch)
+    accuracy = np.nanmean(np.array(accuracy_bunch))
+    
+   
+    return accuracy
+
+
+
+
+
+            
+
 
 
 def get_accuracy(net,tasks,hidden_size,batch_size,num_runs):
@@ -916,7 +1078,8 @@ def get_accuracy_per_task(net,tasks,hidden_size,batch_size,num_runs):
 
             labels = torch.from_numpy(labels1[task].flatten()).type(torch.long)
             
-            loss = criterion(output, labels)
+            #loss = criterion(output, labels)
+
 
 
             '''
@@ -936,7 +1099,17 @@ def get_accuracy_per_task(net,tasks,hidden_size,batch_size,num_runs):
             predicted_labels = torch.argmax(output, dim=1)
 
             # Create a mask where predicted_labels are not 0 or 12 (which are fixation outputs that shouldn't be counted)
-            mask = (predicted_labels != 0) & (predicted_labels != 12)
+            fixations = [0]
+            masks = []
+            for task in range(num_tasks):
+                if task > 0:
+                    fixations.append(int(i1[task-1])+1)
+                masks.append(predicted_labels != fixations[task])
+
+            if num_tasks == 3:
+                mask = masks[0] & masks[1] & masks[2]
+            elif num_tasks == 2:
+                mask = masks[0] & masks[1]
 
             # Use the mask to filter predicted_labels and labels
             filtered_preds = predicted_labels[mask]
@@ -1262,6 +1435,39 @@ def lesion_rnn(model,start_end):
 
     return lesioned_model
 
+def lesion_rnn_mask(model,mask):
+    """
+    Lesion an RNN model at the given neuron index.
+
+    Parameters:
+    - model (torch.nn.Module): The PyTorch RNN model to lesion.
+    - neuron_index (int): The index of the neuron to lesion.
+
+    Returns:
+    - torch.nn.Module: A new PyTorch RNN model with the specified neuron lesioned.
+    """
+    
+    it = model.rnn.input2h.weight.detach().numpy()
+    ot = model.fc.weight.detach().numpy()
+    input_size = it.shape[1]
+    output_size = ot.shape[0]
+    hidden_size = 100
+    dt = 100
+
+    # Clone the original model
+    
+    lesioned_model = RNNNet(input_size=input_size, hidden_size=hidden_size,
+             output_size=output_size, dt=dt)
+ 
+    # Load the original weights into this new instance
+    lesioned_model.load_state_dict(model.state_dict())
+
+    # Lesion the weights for the neuron in the hidden-to-hidden transition
+    lesioned_model.rnn.h2h.weight.data[mask] = 0.0
+   
+
+
+    return lesioned_model
 
 from scipy.optimize import linear_sum_assignment
 import networkx as nx

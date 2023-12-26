@@ -1,0 +1,31 @@
+cpu
+Step 100, Loss 2.4105, Time 24.7s
+loss, no distance:  tensor(0.1028, grad_fn=<NllLossBackward0>)
+Step 200, Loss 2.3143, Time 49.4s
+loss, no distance:  tensor(0.0625, grad_fn=<NllLossBackward0>)
+Step 300, Loss 2.3275, Time 74.2s
+loss, no distance:  tensor(0.0470, grad_fn=<NllLossBackward0>)
+Step 400, Loss 2.3277, Time 99.0s
+loss, no distance:  tensor(0.0340, grad_fn=<NllLossBackward0>)
+Step 500, Loss 2.3389, Time 123.8s
+loss, no distance:  tensor(0.0317, grad_fn=<NllLossBackward0>)
+Step 600, Loss 2.3558, Time 148.7s
+loss, no distance:  tensor(0.0281, grad_fn=<NllLossBackward0>)
+Step 700, Loss 2.3680, Time 173.2s
+loss, no distance:  tensor(0.0203, grad_fn=<NllLossBackward0>)
+Step 800, Loss 2.3790, Time 197.8s
+loss, no distance:  tensor(0.0262, grad_fn=<NllLossBackward0>)
+Step 900, Loss 2.3902, Time 222.6s
+loss, no distance:  tensor(0.0263, grad_fn=<NllLossBackward0>)
+Step 1000, Loss 2.4108, Time 247.4s
+loss, no distance:  tensor(0.0154, grad_fn=<NllLossBackward0>)
+Step 1100, Loss 2.4224, Time 272.0s
+loss, no distance:  tensor(0.0173, grad_fn=<NllLossBackward0>)
+Step 1200, Loss 2.4422, Time 296.9s
+loss, no distance:  tensor(0.0102, grad_fn=<NllLossBackward0>)
+Step 1300, Loss 2.4557, Time 321.7s
+loss, no distance:  tensor(0.0212, grad_fn=<NllLossBackward0>)
+Step 1400, Loss 2.4696, Time 346.6s
+loss, no distance:  tensor(0.0077, grad_fn=<NllLossBackward0>)
+Step 1500, Loss 2.4891, Time 371.6s
+loss, no distance:  tensor(0.0275, grad_fn=<NllLossBackward0>)

@@ -1,0 +1,2432 @@
+-------------------------------iteration:  0
+cpu
+Step 100, Loss 0.1684, Time 11.8s
+Step 200, Loss 0.0845, Time 23.6s
+Step 300, Loss 0.0324, Time 35.3s
+Step 400, Loss 0.0298, Time 47.1s
+Step 500, Loss 0.0275, Time 59.0s
+A [[0.         0.         0.35714287]
+ [0.         0.         0.        ]
+ [0.         0.         0.14285715]]
+SQ 0.0119047611951828
+OSQ 0.0833333358168602
+cpu
+Step 100, Loss 0.1661, Time 11.7s
+Step 200, Loss 0.0510, Time 23.6s
+Step 300, Loss 0.0309, Time 35.3s
+Step 400, Loss 0.0277, Time 47.2s
+Step 500, Loss 0.0267, Time 59.1s
+A [[0.         0.         0.34615386]
+ [0.         0.         0.32142857]
+ [0.         0.         0.        ]]
+SQ 0.11126373708248138
+OSQ 0.11126373708248138
+cpu
+Step 100, Loss 0.1973, Time 11.6s
+Step 200, Loss 0.0502, Time 23.5s
+Step 300, Loss 0.0322, Time 35.1s
+Step 400, Loss 0.0288, Time 47.0s
+Step 500, Loss 0.0268, Time 58.9s
+A [[0.         0.         0.        ]
+ [0.         0.         0.35714287]
+ [0.         0.         0.42857143]]
+SQ -0.08333333333333331
+OSQ 0.13095238308111826
+cpu
+Step 100, Loss 0.1973, Time 11.7s
+Step 200, Loss 0.0686, Time 23.7s
+Step 300, Loss 0.0339, Time 35.5s
+Step 400, Loss 0.0301, Time 47.4s
+Step 500, Loss 0.0281, Time 59.5s
+A [[0.         0.         0.33333334]
+ [0.         0.         0.23333333]
+ [0.         0.         0.5       ]]
+SQ -0.07222222040096918
+OSQ 0.06111111243565877
+cpu
+Step 100, Loss 0.1615, Time 11.6s
+Step 200, Loss 0.0312, Time 23.5s
+Step 300, Loss 0.0274, Time 35.1s
+Step 400, Loss 0.0260, Time 47.0s
+Step 500, Loss 0.0251, Time 58.9s
+A [[0.         0.         0.30769232]
+ [0.         0.         0.29032257]
+ [0.         0.         0.        ]]
+SQ 0.09966914852460225
+OSQ 0.09966914852460225
+cpu
+Step 100, Loss 0.1769, Time 11.5s
+Step 200, Loss 0.0356, Time 23.2s
+Step 300, Loss 0.0284, Time 34.7s
+Step 400, Loss 0.0271, Time 46.5s
+Step 500, Loss 0.0261, Time 58.3s
+A [[0.      0.      0.25   ]
+ [0.      0.      0.     ]
+ [0.      0.      0.09375]]
+SQ 0.010416666666666664
+OSQ 0.057291666666666664
+cpu
+Step 100, Loss 0.1982, Time 11.6s
+Step 200, Loss 0.0516, Time 23.5s
+Step 300, Loss 0.0315, Time 35.2s
+Step 400, Loss 0.0278, Time 47.0s
+Step 500, Loss 0.0267, Time 58.9s
+A [[0.         0.         0.15000001]
+ [0.         0.         0.30000001]
+ [0.         0.         0.55555558]]
+SQ -0.11018519103527069
+OSQ 0.09259259700775146
+cpu
+Step 100, Loss 0.1975, Time 11.6s
+Step 200, Loss 0.0464, Time 23.5s
+Step 300, Loss 0.0322, Time 35.3s
+Step 400, Loss 0.0284, Time 47.2s
+Step 500, Loss 0.0275, Time 59.1s
+A [[0.         0.         0.45454547]
+ [0.         0.         0.25      ]
+ [0.         0.         0.        ]]
+SQ 0.11742424468199412
+OSQ 0.11742424468199412
+cpu
+Step 100, Loss 0.1466, Time 11.7s
+Step 200, Loss 0.0348, Time 23.7s
+Step 300, Loss 0.0287, Time 35.4s
+Step 400, Loss 0.0261, Time 47.3s
+Step 500, Loss 0.0240, Time 59.2s
+A [[0.         0.         0.        ]
+ [0.         0.         0.18181819]
+ [0.         0.         0.15000001]]
+SQ -0.019696970780690513
+OSQ 0.055303032199541725
+cpu
+Step 100, Loss 0.1516, Time 11.8s
+Step 200, Loss 0.0336, Time 23.7s
+Step 300, Loss 0.0284, Time 35.4s
+Step 400, Loss 0.0273, Time 47.3s
+Step 500, Loss 0.0265, Time 59.3s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.44444445]
+ [0.         0.         0.1923077 ]]
+SQ 0.05163817604382834
+OSQ 0.05163817604382834
+cpu
+Step 100, Loss 0.2074, Time 11.6s
+Step 200, Loss 0.0870, Time 23.4s
+Step 300, Loss 0.0296, Time 34.9s
+Step 400, Loss 0.0282, Time 46.7s
+Step 500, Loss 0.0271, Time 58.5s
+A [[0.        0.        0.2857143]
+ [0.        0.        0.6111111]
+ [0.        0.        0.       ]]
+SQ 0.14947090049584708
+OSQ 0.14947090049584708
+cpu
+Step 100, Loss 0.1943, Time 11.6s
+Step 200, Loss 0.1182, Time 23.3s
+Step 300, Loss 0.0817, Time 34.9s
+Step 400, Loss 0.0301, Time 46.7s
+Step 500, Loss 0.0271, Time 58.4s
+A [[0.         0.         0.        ]
+ [0.         0.         0.33333334]
+ [0.         0.         0.        ]]
+SQ 0.055555557211240135
+OSQ 0.055555557211240135
+cpu
+Step 100, Loss 0.1415, Time 11.7s
+Step 200, Loss 0.0348, Time 23.7s
+Step 300, Loss 0.0278, Time 35.4s
+Step 400, Loss 0.0277, Time 47.3s
+Step 500, Loss 0.0255, Time 59.2s
+A [[0.         0.         0.20833333]
+ [0.         0.         0.        ]
+ [0.         0.         0.48275861]]
+SQ -0.12619731575250626
+OSQ 0.11518198996782303
+cpu
+Step 100, Loss 0.1620, Time 11.7s
+Step 200, Loss 0.0356, Time 23.6s
+Step 300, Loss 0.0295, Time 35.3s
+Step 400, Loss 0.0272, Time 47.2s
+Step 500, Loss 0.0268, Time 59.2s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.        ]
+ [0.         0.         0.27272728]]
+SQ -0.04924242695172628
+OSQ 0.08712121347586314
+cpu
+Step 100, Loss 0.1891, Time 11.6s
+Step 200, Loss 0.0560, Time 23.3s
+Step 300, Loss 0.0319, Time 34.9s
+Step 400, Loss 0.0282, Time 46.6s
+Step 500, Loss 0.0255, Time 58.4s
+A [[0.         0.         0.27777779]
+ [0.         0.         0.22727273]
+ [0.         0.         0.        ]]
+SQ 0.08417508751153946
+OSQ 0.08417508751153946
+cpu
+Step 100, Loss 0.2033, Time 11.6s
+Step 200, Loss 0.0968, Time 23.4s
+Step 300, Loss 0.0370, Time 35.0s
+Step 400, Loss 0.0306, Time 46.8s
+Step 500, Loss 0.0271, Time 58.6s
+A [[0.         0.         0.32352942]
+ [0.         0.         0.22499999]
+ [0.         0.         0.        ]]
+SQ 0.09142156938711803
+OSQ 0.09142156938711803
+cpu
+Step 100, Loss 0.1683, Time 11.6s
+Step 200, Loss 0.0345, Time 23.3s
+Step 300, Loss 0.0298, Time 35.0s
+Step 400, Loss 0.0258, Time 46.7s
+Step 500, Loss 0.0250, Time 58.5s
+A [[0.         0.         0.40000001]
+ [0.         0.         0.27777779]
+ [0.         0.         0.30769232]]
+SQ 0.01039885977904001
+OSQ 0.025356123844782516
+cpu
+Step 100, Loss 0.2051, Time 11.5s
+Step 200, Loss 0.0643, Time 23.2s
+Step 300, Loss 0.0305, Time 34.8s
+Step 400, Loss 0.0271, Time 46.5s
+Step 500, Loss 0.0249, Time 58.3s
+A [[0.         0.         0.29032257]
+ [0.         0.         0.40000001]
+ [0.         0.         0.16666667]]
+SQ 0.059498205780982964
+OSQ 0.059498205780982964
+cpu
+Step 100, Loss 0.1577, Time 11.6s
+Step 200, Loss 0.0369, Time 23.3s
+Step 300, Loss 0.0310, Time 34.9s
+Step 400, Loss 0.0289, Time 46.6s
+Step 500, Loss 0.0266, Time 58.4s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.32258064]
+ [0.         0.         0.33333334]]
+SQ -0.015681008497873947
+OSQ 0.025985663135846465
+cpu
+Step 100, Loss 0.1981, Time 11.6s
+Step 200, Loss 0.0780, Time 23.3s
+Step 300, Loss 0.0351, Time 34.9s
+Step 400, Loss 0.0311, Time 46.7s
+Step 500, Loss 0.0297, Time 58.5s
+A [[0.         0.         0.33333334]
+ [0.         0.         0.35294119]
+ [0.         0.         0.30000001]]
+SQ 0.01437908411026001
+OSQ 0.01437908411026001
+-------------------------------iteration:  1
+cpu
+Step 100, Loss 0.1742, Time 11.8s
+Step 200, Loss 0.0347, Time 23.8s
+Step 300, Loss 0.0282, Time 35.6s
+Step 400, Loss 0.0276, Time 47.7s
+Step 500, Loss 0.0247, Time 60.2s
+A [[0.         0.         0.        ]
+ [0.         0.         0.11111111]
+ [0.         0.         0.27777779]]
+SQ -0.07407407835125923
+OSQ 0.06481481716036797
+cpu
+Step 100, Loss 0.1851, Time 11.8s
+Step 200, Loss 0.0361, Time 23.7s
+Step 300, Loss 0.0313, Time 35.5s
+Step 400, Loss 0.0272, Time 47.5s
+Step 500, Loss 0.0262, Time 59.5s
+A [[0.         0.         0.23684211]
+ [0.         0.         0.33333334]
+ [0.         0.         0.        ]]
+SQ 0.09502924233675003
+OSQ 0.09502924233675003
+cpu
+Step 100, Loss 0.1609, Time 11.7s
+Step 200, Loss 0.0357, Time 23.7s
+Step 300, Loss 0.0287, Time 35.4s
+Step 400, Loss 0.0270, Time 47.4s
+Step 500, Loss 0.0266, Time 59.4s
+A [[0.        0.        0.25     ]
+ [0.        0.        0.1923077]
+ [0.        0.        0.       ]]
+SQ 0.0737179492910703
+OSQ 0.0737179492910703
+cpu
+Step 100, Loss 0.1831, Time 11.5s
+Step 200, Loss 0.1144, Time 23.3s
+Step 300, Loss 0.0534, Time 34.9s
+Step 400, Loss 0.0297, Time 46.7s
+Step 500, Loss 0.0276, Time 58.6s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.20588236]
+ [0.         0.         0.        ]]
+SQ 0.062091504534085594
+OSQ 0.062091504534085594
+cpu
+Step 100, Loss 0.1673, Time 11.6s
+Step 200, Loss 0.0402, Time 23.5s
+Step 300, Loss 0.0288, Time 35.2s
+Step 400, Loss 0.0275, Time 47.0s
+Step 500, Loss 0.0259, Time 58.9s
+A [[0.         0.         0.33333334]
+ [0.         0.         0.25      ]
+ [0.         0.         0.        ]]
+SQ 0.0972222238779068
+OSQ 0.0972222238779068
+cpu
+Step 100, Loss 0.1961, Time 11.6s
+Step 200, Loss 0.0769, Time 23.4s
+Step 300, Loss 0.0300, Time 35.1s
+Step 400, Loss 0.0280, Time 46.9s
+Step 500, Loss 0.0257, Time 58.8s
+A [[0.        0.        0.2962963]
+ [0.        0.        0.       ]
+ [0.        0.        0.       ]]
+SQ 0.04938271641731262
+OSQ 0.04938271641731262
+cpu
+Step 100, Loss 0.1871, Time 11.6s
+Step 200, Loss 0.0884, Time 23.5s
+Step 300, Loss 0.0309, Time 35.1s
+Step 400, Loss 0.0274, Time 46.9s
+Step 500, Loss 0.0276, Time 58.7s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.37037036]
+ [0.         0.         0.33333334]]
+SQ -0.007716054717699691
+OSQ 0.03395061691602072
+cpu
+Step 100, Loss 0.2230, Time 11.5s
+Step 200, Loss 0.0630, Time 23.2s
+Step 300, Loss 0.0310, Time 34.7s
+Step 400, Loss 0.0288, Time 46.4s
+Step 500, Loss 0.0269, Time 58.1s
+A [[0.         0.         0.5       ]
+ [0.         0.         0.32142857]
+ [0.         0.         0.        ]]
+SQ 0.1369047611951828
+OSQ 0.1369047611951828
+cpu
+Step 100, Loss 0.1816, Time 11.7s
+Step 200, Loss 0.0332, Time 23.5s
+Step 300, Loss 0.0273, Time 35.1s
+Step 400, Loss 0.0266, Time 47.0s
+Step 500, Loss 0.0251, Time 58.8s
+A [[0.         0.         0.71428573]
+ [0.         0.         0.2647059 ]
+ [0.         0.         0.15384616]]
+SQ 0.11188321808973947
+OSQ 0.11188321808973947
+cpu
+Step 100, Loss 0.1772, Time 11.5s
+Step 200, Loss 0.0375, Time 23.3s
+Step 300, Loss 0.0280, Time 34.8s
+Step 400, Loss 0.0270, Time 46.6s
+Step 500, Loss 0.0256, Time 58.3s
+A [[0.         0.         0.2       ]
+ [0.         0.         0.04761905]
+ [0.         0.         0.        ]]
+SQ 0.041269841914375625
+OSQ 0.041269841914375625
+cpu
+Step 100, Loss 0.1671, Time 11.5s
+Step 200, Loss 0.0341, Time 23.3s
+Step 300, Loss 0.0286, Time 34.8s
+Step 400, Loss 0.0278, Time 46.5s
+Step 500, Loss 0.0267, Time 58.3s
+A [[0.         0.         0.22727273]
+ [0.         0.         0.        ]
+ [0.         0.         0.        ]]
+SQ 0.03787878900766373
+OSQ 0.03787878900766373
+cpu
+Step 100, Loss 0.1746, Time 11.7s
+Step 200, Loss 0.0893, Time 23.6s
+Step 300, Loss 0.0309, Time 35.3s
+Step 400, Loss 0.0280, Time 47.2s
+Step 500, Loss 0.0268, Time 59.1s
+A [[0.         0.         0.44999999]
+ [0.         0.         0.        ]
+ [0.         0.         0.        ]]
+SQ 0.07499999801317851
+OSQ 0.07499999801317851
+cpu
+Step 100, Loss 0.1713, Time 11.8s
+Step 200, Loss 0.0325, Time 23.9s
+Step 300, Loss 0.0272, Time 35.7s
+Step 400, Loss 0.0251, Time 47.7s
+Step 500, Loss 0.0245, Time 59.8s
+A [[0.         0.         0.        ]
+ [0.         0.         0.30000001]
+ [0.         0.         0.29166666]]
+SQ -0.04722221692403158
+OSQ 0.09861111144224803
+cpu
+Step 100, Loss 0.1820, Time 11.7s
+Step 200, Loss 0.1003, Time 23.6s
+Step 300, Loss 0.0320, Time 35.2s
+Step 400, Loss 0.0259, Time 47.1s
+Step 500, Loss 0.0254, Time 59.0s
+A [[0.         0.         0.44117647]
+ [0.         0.         0.15384616]
+ [0.         0.         0.        ]]
+SQ 0.09917043894529343
+OSQ 0.09917043894529343
+cpu
+Step 100, Loss 0.2003, Time 11.8s
+Step 200, Loss 0.0526, Time 23.6s
+Step 300, Loss 0.0293, Time 35.4s
+Step 400, Loss 0.0281, Time 47.2s
+Step 500, Loss 0.0276, Time 59.2s
+A [[0.         0.         0.23076923]
+ [0.         0.         0.18181819]
+ [0.         0.         0.        ]]
+SQ 0.06876456985870998
+OSQ 0.06876456985870998
+cpu
+Step 100, Loss 0.2182, Time 11.8s
+Step 200, Loss 0.0922, Time 23.9s
+Step 300, Loss 0.0331, Time 35.7s
+Step 400, Loss 0.0313, Time 47.7s
+Step 500, Loss 0.0285, Time 59.8s
+A [[0.         0.         0.27272728]
+ [0.         0.         0.2857143 ]
+ [0.         0.         0.26923078]]
+SQ 0.0033300022284189768
+OSQ 0.0033300022284189768
+cpu
+Step 100, Loss 0.2271, Time 11.7s
+Step 200, Loss 0.0766, Time 23.6s
+Step 300, Loss 0.0330, Time 35.3s
+Step 400, Loss 0.0286, Time 47.2s
+Step 500, Loss 0.0261, Time 59.1s
+A [[0.         0.         0.34999999]
+ [0.         0.         0.2857143 ]
+ [0.         0.         0.30000001]]
+SQ 0.00595237811406453
+OSQ 0.01309523483117421
+cpu
+Step 100, Loss 0.2241, Time 11.6s
+Step 200, Loss 0.0532, Time 23.4s
+Step 300, Loss 0.0311, Time 35.1s
+Step 400, Loss 0.0281, Time 46.9s
+Step 500, Loss 0.0258, Time 58.8s
+A [[0.         0.         0.15000001]
+ [0.         0.         0.22222222]
+ [0.         0.         0.66666669]]
+SQ -0.16018519053856534
+OSQ 0.09814814974864322
+cpu
+Step 100, Loss 0.1867, Time 11.5s
+Step 200, Loss 0.0589, Time 23.1s
+Step 300, Loss 0.0296, Time 34.6s
+Step 400, Loss 0.0276, Time 46.3s
+Step 500, Loss 0.0258, Time 58.0s
+A [[0.         0.         0.34482759]
+ [0.         0.         0.2       ]
+ [0.         0.         0.80000001]]
+SQ -0.17586207141478855
+OSQ 0.1241379330555598
+cpu
+Step 100, Loss 0.2024, Time 11.7s
+Step 200, Loss 0.0973, Time 23.6s
+Step 300, Loss 0.0343, Time 35.3s
+Step 400, Loss 0.0293, Time 47.2s
+Step 500, Loss 0.0309, Time 59.1s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.15000001]
+ [0.         0.         0.        ]]
+SQ 0.06666666766007741
+OSQ 0.06666666766007741
+-------------------------------iteration:  2
+cpu
+Step 100, Loss 0.1700, Time 11.6s
+Step 200, Loss 0.0315, Time 23.4s
+Step 300, Loss 0.0277, Time 35.1s
+Step 400, Loss 0.0269, Time 46.9s
+Step 500, Loss 0.0257, Time 58.8s
+A [[0.         0.         0.22580644]
+ [0.         0.         0.83333331]
+ [0.         0.         0.15000001]]
+SQ 0.12652329107125598
+OSQ 0.12652329107125598
+cpu
+Step 100, Loss 0.1954, Time 11.7s
+Step 200, Loss 0.0449, Time 23.6s
+Step 300, Loss 0.0308, Time 35.3s
+Step 400, Loss 0.0258, Time 47.2s
+Step 500, Loss 0.0243, Time 59.1s
+A [[0.         0.         0.2962963 ]
+ [0.         0.         0.40000001]
+ [0.         0.         0.30000001]]
+SQ 0.01604938010374704
+OSQ 0.017901236812273666
+cpu
+Step 100, Loss 0.1857, Time 11.6s
+Step 200, Loss 0.0487, Time 23.4s
+Step 300, Loss 0.0337, Time 35.0s
+Step 400, Loss 0.0302, Time 46.8s
+Step 500, Loss 0.0276, Time 58.7s
+A [[0.         0.         0.42307693]
+ [0.         0.         0.43181819]
+ [0.         0.         0.21428572]]
+SQ 0.07105394701162975
+OSQ 0.07105394701162975
+cpu
+Step 100, Loss 0.1803, Time 11.6s
+Step 200, Loss 0.0860, Time 23.4s
+Step 300, Loss 0.0310, Time 35.1s
+Step 400, Loss 0.0288, Time 47.0s
+Step 500, Loss 0.0275, Time 58.9s
+A [[0.         0.         0.32499999]
+ [0.         0.         0.14285715]
+ [0.         0.         0.75      ]]
+SQ -0.17202381044626236
+OSQ 0.13154761493206024
+cpu
+Step 100, Loss 0.1416, Time 11.5s
+Step 200, Loss 0.0343, Time 23.2s
+Step 300, Loss 0.0280, Time 34.9s
+Step 400, Loss 0.0527, Time 46.6s
+Step 500, Loss 0.0308, Time 58.4s
+A [[0.         0.         0.        ]
+ [0.         0.         0.51428574]
+ [0.         0.         0.16666667]]
+SQ 0.030158733328183494
+OSQ 0.11349206914504369
+cpu
+Step 100, Loss 0.1624, Time 11.7s
+Step 200, Loss 0.0419, Time 23.5s
+Step 300, Loss 0.0292, Time 35.1s
+Step 400, Loss 0.0289, Time 47.0s
+Step 500, Loss 0.0273, Time 58.9s
+A [[0.         0.         0.17647059]
+ [0.         0.         0.04545455]
+ [0.         0.         0.        ]]
+SQ 0.036987523237864174
+OSQ 0.036987523237864174
+cpu
+Step 100, Loss 0.1876, Time 11.6s
+Step 200, Loss 0.0593, Time 23.3s
+Step 300, Loss 0.0327, Time 34.9s
+Step 400, Loss 0.0276, Time 46.6s
+Step 500, Loss 0.0269, Time 58.4s
+A [[0.    0.    0.375]
+ [0.    0.    0.125]
+ [0.    0.    0.25 ]]
+SQ 0.0
+OSQ 0.0625
+cpu
+Step 100, Loss 0.1791, Time 11.5s
+Step 200, Loss 0.0682, Time 23.1s
+Step 300, Loss 0.0296, Time 34.6s
+Step 400, Loss 0.0279, Time 46.3s
+Step 500, Loss 0.0266, Time 58.0s
+A [[0.         0.         0.04166667]
+ [0.         0.         0.40000001]
+ [0.         0.         0.        ]]
+SQ 0.07361111231148243
+OSQ 0.07361111231148243
+cpu
+Step 100, Loss 0.1644, Time 11.6s
+Step 200, Loss 0.0346, Time 23.4s
+Step 300, Loss 0.0274, Time 35.0s
+Step 400, Loss 0.0260, Time 46.8s
+Step 500, Loss 0.0251, Time 58.6s
+A [[0.         0.         0.        ]
+ [0.         0.         0.28947368]
+ [0.         0.         0.09090909]]
+SQ 0.01794258256753286
+OSQ 0.06339712937672932
+cpu
+Step 100, Loss 0.1530, Time 11.5s
+Step 200, Loss 0.0370, Time 23.2s
+Step 300, Loss 0.0280, Time 34.8s
+Step 400, Loss 0.0273, Time 46.5s
+Step 500, Loss 0.0266, Time 58.2s
+A [[0.         0.         0.375     ]
+ [0.         0.         0.3888889 ]
+ [0.         0.         0.14285715]]
+SQ 0.07969576617081958
+OSQ 0.07969576617081958
+cpu
+Step 100, Loss 0.1416, Time 11.6s
+Step 200, Loss 0.0310, Time 23.3s
+Step 300, Loss 0.0279, Time 34.9s
+Step 400, Loss 0.0269, Time 46.6s
+Step 500, Loss 0.0267, Time 58.4s
+A [[0.         0.         0.42307693]
+ [0.         0.         0.21428572]
+ [0.         0.         0.        ]]
+SQ 0.10622710734605789
+OSQ 0.10622710734605789
+cpu
+Step 100, Loss 0.1715, Time 11.6s
+Step 200, Loss 0.0643, Time 23.4s
+Step 300, Loss 0.0315, Time 35.0s
+Step 400, Loss 0.0282, Time 46.8s
+Step 500, Loss 0.0275, Time 58.6s
+A [[0.         0.         0.30555555]
+ [0.         0.         0.27272728]
+ [0.         0.         0.        ]]
+SQ 0.09638047218322754
+OSQ 0.09638047218322754
+cpu
+Step 100, Loss 0.1637, Time 11.6s
+Step 200, Loss 0.0362, Time 23.4s
+Step 300, Loss 0.0283, Time 34.9s
+Step 400, Loss 0.0260, Time 46.7s
+Step 500, Loss 0.0244, Time 58.5s
+A [[0.         0.         0.0625    ]
+ [0.         0.         0.13157895]
+ [0.         0.         0.        ]]
+SQ 0.03234649201234182
+OSQ 0.03234649201234182
+cpu
+Step 100, Loss 0.1732, Time 11.6s
+Step 200, Loss 0.0444, Time 23.4s
+Step 300, Loss 0.0301, Time 35.0s
+Step 400, Loss 0.0276, Time 46.8s
+Step 500, Loss 0.0267, Time 58.6s
+A [[0.        0.        0.28125  ]
+ [0.        0.        0.3611111]
+ [0.        0.        0.       ]]
+SQ 0.10706018408139546
+OSQ 0.10706018408139546
+cpu
+Step 100, Loss 0.1871, Time 11.5s
+Step 200, Loss 0.0435, Time 23.2s
+Step 300, Loss 0.0325, Time 34.8s
+Step 400, Loss 0.0296, Time 46.5s
+Step 500, Loss 0.0278, Time 58.3s
+A [[0.         0.         0.30000001]
+ [0.         0.         0.14285715]
+ [0.         0.         0.        ]]
+SQ 0.07380952686071396
+OSQ 0.07380952686071396
+cpu
+Step 100, Loss 0.1777, Time 11.5s
+Step 200, Loss 0.0596, Time 23.2s
+Step 300, Loss 0.0303, Time 34.7s
+Step 400, Loss 0.0277, Time 46.4s
+Step 500, Loss 0.0259, Time 58.2s
+A [[0.         0.         0.375     ]
+ [0.         0.         0.21428572]
+ [0.         0.         0.        ]]
+SQ 0.09821428606907527
+OSQ 0.09821428606907527
+cpu
+Step 100, Loss 18809.2677, Time 11.8s
+Step 200, Loss 0.0652, Time 23.7s
+Step 300, Loss 0.0444, Time 35.6s
+Step 400, Loss 0.0392, Time 47.5s
+Step 500, Loss 0.0364, Time 59.5s
+A [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+SQ 0.0
+OSQ 0.0
+cpu
+Step 100, Loss 0.1523, Time 11.6s
+Step 200, Loss 0.0387, Time 23.5s
+Step 300, Loss 0.0306, Time 35.2s
+Step 400, Loss 0.0278, Time 47.1s
+Step 500, Loss 0.0264, Time 59.0s
+A [[0.         0.         0.15000001]
+ [0.         0.         0.08333334]
+ [0.         0.         0.41666666]]
+SQ -0.09999999528129896
+OSQ 0.06666666517655054
+cpu
+Step 100, Loss 0.2085, Time 11.6s
+Step 200, Loss 0.0701, Time 23.2s
+Step 300, Loss 0.0309, Time 34.8s
+Step 400, Loss 0.0272, Time 46.5s
+Step 500, Loss 0.0265, Time 58.2s
+A [[0.         0.         0.30769232]
+ [0.         0.         0.30555555]
+ [0.         0.         0.        ]]
+SQ 0.10220797856648763
+OSQ 0.10220797856648763
+cpu
+Step 100, Loss 0.2013, Time 11.8s
+Step 200, Loss 0.0901, Time 23.7s
+Step 300, Loss 0.0350, Time 35.4s
+Step 400, Loss 0.0282, Time 47.4s
+Step 500, Loss 0.0278, Time 59.4s
+A [[0.         0.         0.21428572]
+ [0.         0.         0.1875    ]
+ [0.         0.         0.26086956]]
+SQ -0.019992234806219727
+OSQ 0.016692546506722764
+-------------------------------iteration:  3
+cpu
+Step 100, Loss 0.2185, Time 11.2s
+Step 200, Loss 0.0507, Time 22.7s
+Step 300, Loss 0.0287, Time 33.9s
+Step 400, Loss 0.0279, Time 45.5s
+Step 500, Loss 0.0263, Time 57.0s
+A [[0.         0.         0.16      ]
+ [0.         0.         0.5       ]
+ [0.         0.         0.33333334]]
+SQ -0.0011111150185267177
+OSQ 0.08555555840333301
+cpu
+Step 100, Loss 0.1967, Time 11.7s
+Step 200, Loss 0.0544, Time 23.6s
+Step 300, Loss 0.0308, Time 35.3s
+Step 400, Loss 0.0263, Time 47.1s
+Step 500, Loss 0.0246, Time 59.0s
+A [[0.         0.         0.1875    ]
+ [0.         0.         0.14705883]
+ [0.         0.         0.        ]]
+SQ 0.055759804944197335
+OSQ 0.055759804944197335
+cpu
+Step 100, Loss 0.2268, Time 11.6s
+Step 200, Loss 0.0602, Time 23.4s
+Step 300, Loss 0.0310, Time 35.1s
+Step 400, Loss 0.0279, Time 46.9s
+Step 500, Loss 0.0275, Time 58.8s
+A [[0.         0.         0.30952382]
+ [0.         0.         0.26666668]
+ [0.         0.         0.        ]]
+SQ 0.09603175024191539
+OSQ 0.09603175024191539
+cpu
+Step 100, Loss 0.1706, Time 11.4s
+Step 200, Loss 0.0869, Time 23.1s
+Step 300, Loss 0.0319, Time 34.6s
+Step 400, Loss 0.0290, Time 46.4s
+Step 500, Loss 0.0271, Time 58.1s
+A [[0.         0.         0.19444445]
+ [0.         0.         0.1875    ]
+ [0.         0.         0.        ]]
+SQ 0.06365740795930226
+OSQ 0.06365740795930226
+cpu
+Step 100, Loss 0.1552, Time 11.5s
+Step 200, Loss 0.0347, Time 23.2s
+Step 300, Loss 0.0293, Time 34.8s
+Step 400, Loss 0.0258, Time 46.5s
+Step 500, Loss 0.0241, Time 58.2s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.26666668]
+ [0.         0.         0.34615386]]
+SQ -0.04316239307324092
+OSQ 0.04658119877179464
+cpu
+Step 100, Loss 0.1633, Time 11.6s
+Step 200, Loss 0.0336, Time 23.5s
+Step 300, Loss 0.0278, Time 35.2s
+Step 400, Loss 0.0274, Time 47.0s
+Step 500, Loss 0.0262, Time 58.9s
+A [[0.         0.         0.41025642]
+ [0.         0.         0.26923078]
+ [0.         0.         0.        ]]
+SQ 0.11324786643187205
+OSQ 0.11324786643187205
+cpu
+Step 100, Loss 0.2097, Time 11.2s
+Step 200, Loss 0.0551, Time 22.6s
+Step 300, Loss 0.0301, Time 33.9s
+Step 400, Loss 0.0289, Time 45.4s
+Step 500, Loss 0.0297, Time 56.9s
+A [[0.         0.         0.20833333]
+ [0.         0.         0.        ]
+ [0.         0.         0.        ]]
+SQ 0.034722221394379936
+OSQ 0.034722221394379936
+cpu
+Step 100, Loss 0.1926, Time 11.6s
+Step 200, Loss 0.0848, Time 23.5s
+Step 300, Loss 0.0309, Time 35.2s
+Step 400, Loss 0.0280, Time 47.1s
+Step 500, Loss 0.0271, Time 59.0s
+A [[0.         0.         0.07142857]
+ [0.         0.         0.14285715]
+ [0.         0.         0.        ]]
+SQ 0.0357142873108387
+OSQ 0.0357142873108387
+cpu
+Step 100, Loss 0.1945, Time 11.6s
+Step 200, Loss 0.0329, Time 23.4s
+Step 300, Loss 0.0283, Time 35.2s
+Step 400, Loss 0.0266, Time 47.0s
+Step 500, Loss 0.0264, Time 58.9s
+A [[0.         0.         0.27777779]
+ [0.         0.         0.        ]
+ [0.         0.         0.375     ]]
+SQ -0.07870370149612427
+OSQ 0.10879629850387573
+cpu
+Step 100, Loss 0.1553, Time 11.5s
+Step 200, Loss 0.0310, Time 23.2s
+Step 300, Loss 0.0275, Time 34.8s
+Step 400, Loss 0.0262, Time 46.5s
+Step 500, Loss 0.0250, Time 58.2s
+A [[0.         0.         0.25714287]
+ [0.         0.         0.55000001]
+ [0.         0.         0.        ]]
+SQ 0.13452381392319998
+OSQ 0.13452381392319998
+cpu
+Step 100, Loss 0.1948, Time 11.8s
+Step 200, Loss 0.0694, Time 23.7s
+Step 300, Loss 0.0299, Time 35.4s
+Step 400, Loss 0.0276, Time 47.3s
+Step 500, Loss 0.0270, Time 59.3s
+A [[0.         0.         0.18181819]
+ [0.         0.         0.22857143]
+ [0.         0.         0.66666669]]
+SQ -0.15382395933071774
+OSQ 0.08860029031833014
+cpu
+Step 100, Loss 0.2023, Time 11.6s
+Step 200, Loss 0.0692, Time 23.3s
+Step 300, Loss 0.0312, Time 34.8s
+Step 400, Loss 0.0285, Time 46.6s
+Step 500, Loss 0.0289, Time 58.4s
+A [[0.         0.         0.        ]
+ [0.         0.         0.24324325]
+ [0.         0.         0.        ]]
+SQ 0.040540541211764015
+OSQ 0.040540541211764015
+cpu
+Step 100, Loss 0.1620, Time 11.7s
+Step 200, Loss 0.0338, Time 23.5s
+Step 300, Loss 0.0279, Time 35.3s
+Step 400, Loss 0.0253, Time 47.2s
+Step 500, Loss 0.0238, Time 59.2s
+A [[0.         0.         0.34999999]
+ [0.         0.         0.26923078]
+ [0.         0.         0.        ]]
+SQ 0.1032051295042038
+OSQ 0.1032051295042038
+cpu
+Step 100, Loss 0.1569, Time 11.5s
+Step 200, Loss 0.0385, Time 23.3s
+Step 300, Loss 0.0311, Time 34.9s
+Step 400, Loss 0.0270, Time 46.6s
+Step 500, Loss 0.0260, Time 58.5s
+A [[0.         0.         0.32142857]
+ [0.         0.         0.        ]
+ [0.         0.         0.21428572]]
+SQ -0.017857144276301064
+OSQ 0.08928571393092473
+cpu
+Step 100, Loss 0.1597, Time 11.5s
+Step 200, Loss 0.0352, Time 23.3s
+Step 300, Loss 0.0283, Time 34.9s
+Step 400, Loss 0.0277, Time 46.7s
+Step 500, Loss 0.0279, Time 58.5s
+A [[0.         0.         0.22727273]
+ [0.         0.         0.13333334]
+ [0.         0.         0.25      ]]
+SQ -0.023232320944468178
+OSQ 0.03510100891192754
+cpu
+Step 100, Loss 0.1875, Time 11.4s
+Step 200, Loss 0.1203, Time 23.1s
+Step 300, Loss 0.0515, Time 34.7s
+Step 400, Loss 0.0303, Time 46.3s
+Step 500, Loss 0.0279, Time 58.1s
+A [[0.         0.         0.29166666]
+ [0.         0.         0.35714287]
+ [0.         0.         0.        ]]
+SQ 0.10813492039839427
+OSQ 0.10813492039839427
+cpu
+Step 100, Loss 42462.3586, Time 11.5s
+Step 200, Loss 0.0456, Time 23.2s
+Step 300, Loss 0.0314, Time 34.8s
+Step 400, Loss 0.0280, Time 46.5s
+Step 500, Loss 0.0263, Time 58.3s
+A [[0.         0.         0.30769232]
+ [0.         0.         0.30769232]
+ [0.         0.         0.15384616]]
+SQ 0.051282053192456566
+OSQ 0.051282053192456566
+cpu
+Step 100, Loss 0.2168, Time 11.7s
+Step 200, Loss 0.0513, Time 23.6s
+Step 300, Loss 0.0324, Time 35.4s
+Step 400, Loss 0.0282, Time 47.3s
+Step 500, Loss 0.0273, Time 59.3s
+A [[0.         0.         0.28125   ]
+ [0.         0.         0.34210527]
+ [0.         0.         0.25      ]]
+SQ 0.02055921157201132
+OSQ 0.02055921157201132
+cpu
+Step 100, Loss 0.1851, Time 11.6s
+Step 200, Loss 0.1253, Time 23.4s
+Step 300, Loss 0.0456, Time 34.9s
+Step 400, Loss 0.0291, Time 46.7s
+Step 500, Loss 0.0270, Time 58.5s
+A [[0.        0.        0.2857143]
+ [0.        0.        0.2      ]
+ [0.        0.        0.       ]]
+SQ 0.08095238357782364
+OSQ 0.08095238357782364
+cpu
+Step 100, Loss 0.1781, Time 11.6s
+Step 200, Loss 0.0428, Time 23.3s
+Step 300, Loss 0.0315, Time 34.8s
+Step 400, Loss 0.0288, Time 46.6s
+Step 500, Loss 0.0277, Time 58.3s
+A [[0.         0.         0.375     ]
+ [0.         0.         0.35714287]
+ [0.         0.         0.        ]]
+SQ 0.12202381094296773
+OSQ 0.12202381094296773
+-------------------------------iteration:  4
+cpu
+Step 100, Loss 0.1765, Time 11.5s
+Step 200, Loss 0.0335, Time 23.2s
+Step 300, Loss 0.0283, Time 34.7s
+Step 400, Loss 0.0275, Time 46.5s
+Step 500, Loss 0.0261, Time 58.2s
+A [[0.         0.         0.        ]
+ [0.         0.         0.07142857]
+ [0.         0.         0.26923078]]
+SQ -0.0778388318916162
+OSQ 0.05677655960122744
+cpu
+Step 100, Loss 0.2003, Time 11.5s
+Step 200, Loss 0.0906, Time 23.2s
+Step 300, Loss 0.0300, Time 34.8s
+Step 400, Loss 0.0272, Time 46.5s
+Step 500, Loss 0.0263, Time 58.2s
+A [[0.         0.         0.30000001]
+ [0.         0.         0.22222222]
+ [0.         0.         0.20408164]]
+SQ 0.019009826083978013
+OSQ 0.019009826083978013
+cpu
+Step 100, Loss 0.2116, Time 11.5s
+Step 200, Loss 0.0572, Time 23.2s
+Step 300, Loss 0.0311, Time 34.7s
+Step 400, Loss 0.0283, Time 46.5s
+Step 500, Loss 0.0292, Time 58.2s
+A [[0.         0.         0.22857143]
+ [0.         0.         0.27272728]
+ [0.         0.         0.        ]]
+SQ 0.0835497851173083
+OSQ 0.0835497851173083
+cpu
+Step 100, Loss 0.1676, Time 11.5s
+Step 200, Loss 0.0672, Time 23.3s
+Step 300, Loss 0.0340, Time 34.9s
+Step 400, Loss 0.0285, Time 46.8s
+Step 500, Loss 0.0269, Time 58.6s
+A [[0.         0.         0.36363637]
+ [0.         0.         0.3888889 ]
+ [0.         0.         0.        ]]
+SQ 0.1254208783308665
+OSQ 0.1254208783308665
+cpu
+Step 100, Loss 0.1485, Time 11.6s
+Step 200, Loss 0.0327, Time 23.5s
+Step 300, Loss 0.0283, Time 35.2s
+Step 400, Loss 0.0273, Time 47.0s
+Step 500, Loss 0.0255, Time 59.0s
+A [[0.         0.         0.        ]
+ [0.         0.         0.30769232]
+ [0.         0.         0.27777779]]
+SQ -0.0413105438152949
+OSQ 0.09757835169633229
+cpu
+Step 100, Loss 0.1954, Time 11.3s
+Step 200, Loss 0.0680, Time 22.9s
+Step 300, Loss 0.0302, Time 34.4s
+Step 400, Loss 0.0279, Time 46.0s
+Step 500, Loss 0.0262, Time 57.6s
+A [[0.         0.         0.2       ]
+ [0.         0.         0.29032257]
+ [0.         0.         0.        ]]
+SQ 0.0817204291621844
+OSQ 0.0817204291621844
+cpu
+Step 100, Loss 0.1887, Time 11.4s
+Step 200, Loss 0.0781, Time 23.1s
+Step 300, Loss 0.0352, Time 34.7s
+Step 400, Loss 0.0313, Time 46.3s
+Step 500, Loss 0.0271, Time 58.0s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.31818181]
+ [0.         0.         0.        ]]
+SQ 0.09469696879386902
+OSQ 0.09469696879386902
+cpu
+Step 100, Loss 0.1940, Time 11.7s
+Step 200, Loss 0.0954, Time 23.5s
+Step 300, Loss 0.0342, Time 35.2s
+Step 400, Loss 0.0288, Time 47.0s
+Step 500, Loss 0.0280, Time 58.9s
+A [[0.         0.         0.30000001]
+ [0.         0.         0.28125   ]
+ [0.         0.         0.2       ]]
+SQ 0.03020833432674408
+OSQ 0.03020833432674408
+cpu
+Step 100, Loss 0.1983, Time 11.7s
+Step 200, Loss 0.0380, Time 23.5s
+Step 300, Loss 0.0315, Time 35.1s
+Step 400, Loss 0.0283, Time 46.9s
+Step 500, Loss 0.0263, Time 58.8s
+A [[0.         0.         0.21428572]
+ [0.         0.         0.        ]
+ [0.         0.         0.16666667]]
+SQ -0.01984127114216487
+OSQ 0.06349206467469533
+cpu
+Step 100, Loss 0.2037, Time 11.7s
+Step 200, Loss 0.0627, Time 23.5s
+Step 300, Loss 0.0307, Time 35.3s
+Step 400, Loss 0.0295, Time 47.1s
+Step 500, Loss 0.0271, Time 59.0s
+A [[0.  0.  0.2]
+ [0.  0.  0. ]
+ [0.  0.  0. ]]
+SQ 0.033333333830038704
+OSQ 0.033333333830038704
+cpu
+Step 100, Loss 0.1745, Time 11.6s
+Step 200, Loss 0.0380, Time 23.5s
+Step 300, Loss 0.0300, Time 35.2s
+Step 400, Loss 0.0279, Time 47.0s
+Step 500, Loss 0.0264, Time 58.8s
+A [[0.         0.         0.22222222]
+ [0.         0.         0.31818181]
+ [0.         0.         0.        ]]
+SQ 0.09006733944018681
+OSQ 0.09006733944018681
+cpu
+Step 100, Loss 0.1887, Time 11.6s
+Step 200, Loss 0.1201, Time 23.4s
+Step 300, Loss 0.1088, Time 35.0s
+Step 400, Loss 0.0734, Time 46.8s
+Step 500, Loss 0.0295, Time 58.7s
+A [[0.         0.         0.        ]
+ [0.         0.         0.45833334]
+ [0.         0.         0.        ]]
+SQ 0.07638889054457347
+OSQ 0.07638889054457347
+cpu
+Step 100, Loss 0.1701, Time 11.7s
+Step 200, Loss 0.0315, Time 23.6s
+Step 300, Loss 0.0281, Time 35.3s
+Step 400, Loss 0.0263, Time 47.2s
+Step 500, Loss 0.0261, Time 59.1s
+A [[0.         0.         0.375     ]
+ [0.         0.         0.23809524]
+ [0.         0.         0.        ]]
+SQ 0.10218253980080287
+OSQ 0.10218253980080287
+cpu
+Step 100, Loss 0.1197, Time 11.5s
+Step 200, Loss 0.0386, Time 23.2s
+Step 300, Loss 0.0278, Time 34.7s
+Step 400, Loss 0.0264, Time 46.4s
+Step 500, Loss 0.0249, Time 58.2s
+A [[0.         0.         0.26190478]
+ [0.         0.         0.22222222]
+ [0.         0.         0.        ]]
+SQ 0.0806878333290418
+OSQ 0.0806878333290418
+cpu
+Step 100, Loss 0.2112, Time 11.8s
+Step 200, Loss 0.1218, Time 23.7s
+Step 300, Loss 0.0427, Time 35.5s
+Step 400, Loss 0.0294, Time 47.4s
+Step 500, Loss 0.0271, Time 59.5s
+A [[0.         0.         0.375     ]
+ [0.         0.         0.30952382]
+ [0.         0.         0.        ]]
+SQ 0.11408730347951253
+OSQ 0.11408730347951253
+cpu
+Step 100, Loss 0.2071, Time 11.6s
+Step 200, Loss 0.0576, Time 23.3s
+Step 300, Loss 0.0307, Time 34.9s
+Step 400, Loss 0.0268, Time 46.6s
+Step 500, Loss 0.0257, Time 58.4s
+A [[0.         0.         0.38709676]
+ [0.         0.         0.25      ]
+ [0.         0.         0.        ]]
+SQ 0.10618279377619426
+OSQ 0.10618279377619426
+cpu
+Step 100, Loss 0.1449, Time 11.6s
+Step 200, Loss 0.0317, Time 23.4s
+Step 300, Loss 0.0273, Time 35.1s
+Step 400, Loss 0.0252, Time 46.9s
+Step 500, Loss 0.0251, Time 58.8s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.36363637]
+ [0.         0.         0.32499999]]
+SQ -0.006060600280761719
+OSQ 0.031439393758773804
+cpu
+Step 100, Loss 0.2414, Time 11.4s
+Step 200, Loss 0.0402, Time 23.1s
+Step 300, Loss 0.0303, Time 34.7s
+Step 400, Loss 0.0288, Time 46.3s
+Step 500, Loss 0.0264, Time 58.1s
+A [[0.         0.         0.1923077 ]
+ [0.         0.         0.14285715]
+ [0.         0.         0.        ]]
+SQ 0.055860807498296104
+OSQ 0.055860807498296104
+cpu
+Step 100, Loss 0.1837, Time 11.7s
+Step 200, Loss 0.0645, Time 23.5s
+Step 300, Loss 0.0304, Time 35.2s
+Step 400, Loss 0.0286, Time 47.0s
+Step 500, Loss 0.0278, Time 58.9s
+A [[0.         0.         0.        ]
+ [0.         0.         0.21875   ]
+ [0.         0.         0.23333333]]
+SQ -0.04131944477558135
+OSQ 0.07534722238779068
+cpu
+Step 100, Loss 0.1806, Time 11.5s
+Step 200, Loss 0.0471, Time 23.3s
+Step 300, Loss 0.0393, Time 34.8s
+Step 400, Loss 0.0289, Time 46.6s
+Step 500, Loss 0.0255, Time 58.3s
+A [[0.        0.        0.       ]
+ [0.        0.        0.3888889]
+ [0.        0.        0.       ]]
+SQ 0.06481481591860454
+OSQ 0.06481481591860454
+-------------------------------iteration:  5
+cpu
+Step 100, Loss 0.2199, Time 11.6s
+Step 200, Loss 0.0336, Time 23.4s
+Step 300, Loss 0.0270, Time 35.0s
+Step 400, Loss 0.0255, Time 46.9s
+Step 500, Loss 0.0246, Time 58.8s
+A [[0.      0.      0.     ]
+ [0.      0.      0.25   ]
+ [0.      0.      0.21875]]
+SQ -0.03125000000000001
+OSQ 0.078125
+cpu
+Step 100, Loss 0.1735, Time 11.6s
+Step 200, Loss 0.0358, Time 23.3s
+Step 300, Loss 0.0302, Time 34.9s
+Step 400, Loss 0.0270, Time 46.6s
+Step 500, Loss 0.0269, Time 58.4s
+A [[0.         0.         0.2857143 ]
+ [0.         0.         0.27272728]
+ [0.         0.         0.        ]]
+SQ 0.0930735965569814
+OSQ 0.0930735965569814
+cpu
+Step 100, Loss 0.2162, Time 11.6s
+Step 200, Loss 0.1022, Time 23.4s
+Step 300, Loss 0.0693, Time 35.0s
+Step 400, Loss 0.0315, Time 46.9s
+Step 500, Loss 0.0275, Time 58.7s
+A [[0.        0.        0.15625  ]
+ [0.        0.        0.5714286]
+ [0.        0.        0.       ]]
+SQ 0.12127976616223653
+OSQ 0.12127976616223653
+cpu
+Step 100, Loss 0.1876, Time 11.5s
+Step 200, Loss 0.1329, Time 23.3s
+Step 300, Loss 0.0335, Time 34.8s
+Step 400, Loss 0.0282, Time 46.7s
+Step 500, Loss 0.0274, Time 58.5s
+A [[0.         0.         0.34615386]
+ [0.         0.         0.16129032]
+ [0.         0.         0.        ]]
+SQ 0.08457402884960175
+OSQ 0.08457402884960175
+cpu
+Step 100, Loss 0.1640, Time 11.5s
+Step 200, Loss 0.0297, Time 23.4s
+Step 300, Loss 0.0275, Time 34.9s
+Step 400, Loss 0.0263, Time 46.6s
+Step 500, Loss 0.0253, Time 58.3s
+A [[0.         0.         0.21428572]
+ [0.         0.         0.        ]
+ [0.         0.         0.35294119]]
+SQ -0.08193277567625046
+OSQ 0.09453781694173813
+cpu
+Step 100, Loss 0.1780, Time 11.5s
+Step 200, Loss 0.0354, Time 23.2s
+Step 300, Loss 0.0284, Time 34.7s
+Step 400, Loss 0.0273, Time 46.4s
+Step 500, Loss 0.0257, Time 58.3s
+A [[0.         0.         0.35714287]
+ [0.         0.         0.25      ]
+ [0.         0.         0.        ]]
+SQ 0.1011904776096344
+OSQ 0.1011904776096344
+cpu
+Step 100, Loss 0.1970, Time 11.5s
+Step 200, Loss 0.1172, Time 23.2s
+Step 300, Loss 0.0380, Time 34.8s
+Step 400, Loss 0.0289, Time 46.5s
+Step 500, Loss 0.0260, Time 58.3s
+A [[0.         0.         0.21428572]
+ [0.         0.         0.        ]
+ [0.         0.         0.44827586]]
+SQ -0.11371100197235745
+OSQ 0.11042693008979161
+cpu
+Step 100, Loss 0.2284, Time 11.5s
+Step 200, Loss 0.1124, Time 23.1s
+Step 300, Loss 0.0331, Time 34.7s
+Step 400, Loss 0.0288, Time 46.4s
+Step 500, Loss 0.0273, Time 58.2s
+A [[0.         0.         0.21875   ]
+ [0.         0.         0.30000001]
+ [0.         0.         0.        ]]
+SQ 0.08645833532015483
+OSQ 0.08645833532015483
+cpu
+Step 100, Loss 0.1457, Time 11.6s
+Step 200, Loss 0.0298, Time 23.3s
+Step 300, Loss 0.0265, Time 35.0s
+Step 400, Loss 0.0248, Time 46.8s
+Step 500, Loss 0.0239, Time 58.5s
+A [[0.         0.         0.5714286 ]
+ [0.         0.         0.71428573]
+ [0.         0.         0.26666668]]
+SQ 0.12539682785669964
+OSQ 0.12539682785669964
+cpu
+Step 100, Loss 0.1721, Time 11.5s
+Step 200, Loss 0.0386, Time 23.3s
+Step 300, Loss 0.0286, Time 34.8s
+Step 400, Loss 0.0252, Time 46.5s
+Step 500, Loss 0.0248, Time 58.3s
+A [[0.         0.         0.20833333]
+ [0.         0.         0.11111111]
+ [0.         0.         0.        ]]
+SQ 0.05324074005087217
+OSQ 0.05324074005087217
+cpu
+Step 100, Loss 0.1936, Time 11.5s
+Step 200, Loss 0.0584, Time 23.2s
+Step 300, Loss 0.0320, Time 34.6s
+Step 400, Loss 0.0278, Time 46.3s
+Step 500, Loss 0.0266, Time 58.0s
+A [[0.         0.         0.32352942]
+ [0.         0.         0.20833333]
+ [0.         0.         0.        ]]
+SQ 0.0886437917749087
+OSQ 0.0886437917749087
+cpu
+Step 100, Loss 0.2063, Time 11.4s
+Step 200, Loss 0.0603, Time 22.9s
+Step 300, Loss 0.0318, Time 34.3s
+Step 400, Loss 0.0297, Time 45.8s
+Step 500, Loss 0.0280, Time 57.5s
+A [[0.         0.         0.23529412]
+ [0.         0.         0.        ]
+ [0.         0.         0.        ]]
+SQ 0.03921568642059962
+OSQ 0.03921568642059962
+cpu
+Step 100, Loss 0.1392, Time 11.6s
+Step 200, Loss 0.0300, Time 23.3s
+Step 300, Loss 0.0278, Time 34.9s
+Step 400, Loss 0.0263, Time 46.7s
+Step 500, Loss 0.0262, Time 58.5s
+A [[0.         0.         0.42105263]
+ [0.         0.         0.32499999]
+ [0.         0.         0.16666667]]
+SQ 0.06878654658794403
+OSQ 0.06878654658794403
+cpu
+Step 100, Loss 0.1814, Time 11.4s
+Step 200, Loss 0.0439, Time 23.1s
+Step 300, Loss 0.0297, Time 34.5s
+Step 400, Loss 0.0274, Time 46.1s
+Step 500, Loss 0.0257, Time 57.7s
+A [[0.         0.         0.27777779]
+ [0.         0.         0.26923078]
+ [0.         0.         0.        ]]
+SQ 0.09116809566815694
+OSQ 0.09116809566815694
+cpu
+Step 100, Loss 0.1862, Time 11.4s
+Step 200, Loss 0.0620, Time 23.1s
+Step 300, Loss 0.0317, Time 34.5s
+Step 400, Loss 0.0289, Time 46.2s
+Step 500, Loss 0.0275, Time 57.9s
+A [[0.         0.         0.24242425]
+ [0.         0.         0.15384616]
+ [0.         0.         0.        ]]
+SQ 0.06604506820440292
+OSQ 0.06604506820440292
+cpu
+Step 100, Loss 0.1981, Time 11.4s
+Step 200, Loss 0.0687, Time 23.0s
+Step 300, Loss 0.0353, Time 34.5s
+Step 400, Loss 0.0308, Time 46.1s
+Step 500, Loss 0.0271, Time 57.7s
+A [[0.         0.         0.44444445]
+ [0.         0.         0.16666667]
+ [0.         0.         0.        ]]
+SQ 0.101851853231589
+OSQ 0.101851853231589
+cpu
+Step 100, Loss 289.8258, Time 11.4s
+Step 200, Loss 0.0453, Time 23.0s
+Step 300, Loss 0.0363, Time 34.4s
+Step 400, Loss 0.0311, Time 45.9s
+Step 500, Loss 0.0483, Time 57.6s
+A [[0.         0.         0.        ]
+ [0.         0.         0.        ]
+ [0.         0.         0.33333334]]
+SQ -0.11111111442248027
+OSQ 0.055555557211240135
+cpu
+Step 100, Loss 0.1721, Time 11.5s
+Step 200, Loss 0.0365, Time 23.2s
+Step 300, Loss 0.0300, Time 34.7s
+Step 400, Loss 0.0278, Time 46.4s
+Step 500, Loss 0.0263, Time 58.1s
+A [[0.         0.         0.34375   ]
+ [0.         0.         0.40909091]
+ [0.         0.         0.        ]]
+SQ 0.1254734843969345
+OSQ 0.1254734843969345
+cpu
+Step 100, Loss 0.1744, Time 11.6s
+Step 200, Loss 0.0389, Time 23.3s
+Step 300, Loss 0.0306, Time 34.9s
+Step 400, Loss 0.0280, Time 46.7s
+Step 500, Loss 0.0276, Time 58.5s
+A [[0.         0.         0.        ]
+ [0.         0.         0.31578946]
+ [0.         0.         0.27586207]]
+SQ -0.03932244578997294
+OSQ 0.09860858817895253
+cpu
+Step 100, Loss 0.1988, Time 11.4s
+Step 200, Loss 0.0659, Time 23.1s
+Step 300, Loss 0.0431, Time 34.6s
+Step 400, Loss 0.0668, Time 46.4s
+Step 500, Loss 0.0322, Time 58.1s
+A [[0.         0.         0.06666667]
+ [0.         0.         0.27777779]
+ [0.         0.         0.        ]]
+SQ 0.05740741019447645
+OSQ 0.05740741019447645
+-------------------------------iteration:  6
+cpu
+Step 100, Loss 0.1804, Time 11.5s
+Step 200, Loss 0.0345, Time 23.4s
+Step 300, Loss 0.0295, Time 35.0s
+Step 400, Loss 0.0274, Time 46.8s
+Step 500, Loss 0.0266, Time 58.8s
+A [[0.         0.         0.        ]
+ [0.         0.         0.3611111 ]
+ [0.         0.         0.16666667]]
+SQ 0.0046296268701553345
+OSQ 0.08796296268701553
+cpu
+Step 100, Loss 0.1627, Time 11.6s
+Step 200, Loss 0.0294, Time 23.4s
+Step 300, Loss 0.0277, Time 35.2s
+Step 400, Loss 0.0277, Time 47.0s
+Step 500, Loss 0.0258, Time 58.9s
+A [[0.         0.         0.36363637]
+ [0.         0.         0.        ]
+ [0.         0.         0.20930232]]
+SQ -0.009161377946535751
+OSQ 0.09548978259166081
+cpu
+Step 100, Loss 0.1773, Time 11.4s
+Step 200, Loss 0.0395, Time 23.2s
+Step 300, Loss 0.0296, Time 34.6s
+Step 400, Loss 0.0285, Time 46.3s
+Step 500, Loss 0.0274, Time 58.1s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.55000001]
+ [0.         0.         0.5       ]]
+SQ -0.04722221940755843
+OSQ 0.11944444477558136
+cpu
+Step 100, Loss 0.1785, Time 11.4s
+Step 200, Loss 0.0749, Time 23.2s
+Step 300, Loss 0.0339, Time 34.6s
+Step 400, Loss 0.0292, Time 46.3s
+Step 500, Loss 0.0271, Time 58.0s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.375     ]
+ [0.         0.         0.25      ]]
+SQ 0.006944445272286742
+OSQ 0.048611109455426536
+cpu
+Step 100, Loss 0.1808, Time 11.5s
+Step 200, Loss 0.0338, Time 23.2s
+Step 300, Loss 0.0260, Time 34.8s
+Step 400, Loss 0.0246, Time 46.5s
+Step 500, Loss 0.0241, Time 58.3s
+A [[0.  0.  0.5]
+ [0.  0.  0. ]
+ [0.  0.  0.2]]
+SQ 0.01666666567325592
+OSQ 0.11666666716337204
+cpu
+Step 100, Loss 0.1620, Time 11.5s
+Step 200, Loss 0.0336, Time 23.3s
+Step 300, Loss 0.0280, Time 34.8s
+Step 400, Loss 0.0277, Time 46.5s
+Step 500, Loss 0.0261, Time 58.3s
+A [[0.         0.         0.        ]
+ [0.         0.         0.2       ]
+ [0.         0.         0.27272728]]
+SQ -0.05757575978835424
+OSQ 0.07878788063923518
+cpu
+Step 100, Loss 0.2225, Time 11.5s
+Step 200, Loss 0.0645, Time 23.2s
+Step 300, Loss 0.0295, Time 34.6s
+Step 400, Loss 0.0281, Time 46.3s
+Step 500, Loss 0.0262, Time 58.0s
+A [[0.         0.         0.36363637]
+ [0.         0.         0.60000002]
+ [0.         0.         0.33333334]]
+SQ 0.04949495196342467
+OSQ 0.04949495196342467
+cpu
+Step 100, Loss 0.1949, Time 11.4s
+Step 200, Loss 0.0668, Time 23.0s
+Step 300, Loss 0.0294, Time 34.4s
+Step 400, Loss 0.0277, Time 45.9s
+Step 500, Loss 0.0260, Time 57.6s
+A [[0.         0.         0.40625   ]
+ [0.         0.         0.34782609]
+ [0.         0.         0.        ]]
+SQ 0.12567934890588126
+OSQ 0.12567934890588126
+cpu
+Step 100, Loss 0.1449, Time 11.5s
+Step 200, Loss 0.0309, Time 23.3s
+Step 300, Loss 0.0267, Time 34.8s
+Step 400, Loss 0.0253, Time 46.5s
+Step 500, Loss 0.0244, Time 58.3s
+A [[0.         0.         0.30769232]
+ [0.         0.         0.27777779]
+ [0.         0.         0.30769232]]
+SQ -0.00498575468858084
+OSQ 0.009971509377161666
+cpu
+Step 100, Loss 0.1740, Time 11.5s
+Step 200, Loss 0.0681, Time 23.1s
+Step 300, Loss 0.0340, Time 34.6s
+Step 400, Loss 0.0304, Time 46.3s
+Step 500, Loss 0.0270, Time 58.0s
+A [[0.         0.         0.31818181]
+ [0.         0.         0.        ]
+ [0.         0.         0.2857143 ]]
+SQ -0.042207797368367515
+OSQ 0.10064935187498729
+cpu
+Step 100, Loss 0.1873, Time 11.4s
+Step 200, Loss 0.0857, Time 23.1s
+Step 300, Loss 0.0303, Time 34.6s
+Step 400, Loss 0.0287, Time 46.3s
+Step 500, Loss 0.0270, Time 58.0s
+A [[0.         0.         0.18181819]
+ [0.         0.         0.18181819]
+ [0.         0.         0.        ]]
+SQ 0.06060606241226196
+OSQ 0.06060606241226196
+cpu
+Step 100, Loss 0.1892, Time 11.4s
+Step 200, Loss 0.0454, Time 23.0s
+Step 300, Loss 0.0323, Time 34.3s
+Step 400, Loss 0.0287, Time 45.9s
+Step 500, Loss 0.0266, Time 57.5s
+A [[0.         0.         0.22580644]
+ [0.         0.         0.15384616]
+ [0.         0.         0.        ]]
+SQ 0.06327543407678604
+OSQ 0.06327543407678604
+cpu
+Step 100, Loss 0.1768, Time 11.4s
+Step 200, Loss 0.0309, Time 23.0s
+Step 300, Loss 0.0286, Time 34.4s
+Step 400, Loss 0.0272, Time 46.0s
+Step 500, Loss 0.0265, Time 57.7s
+A [[0.         0.         0.3125    ]
+ [0.         0.         0.22727273]
+ [0.         0.         0.        ]]
+SQ 0.08996212234099706
+OSQ 0.08996212234099706
+cpu
+Step 100, Loss 0.1644, Time 11.5s
+Step 200, Loss 0.0386, Time 23.1s
+Step 300, Loss 0.0290, Time 34.6s
+Step 400, Loss 0.0278, Time 46.2s
+Step 500, Loss 0.0267, Time 57.9s
+A [[0.         0.         0.125     ]
+ [0.         0.         0.19444445]
+ [0.         0.         0.        ]]
+SQ 0.0532407412926356
+OSQ 0.0532407412926356
+cpu
+Step 100, Loss 0.1595, Time 11.5s
+Step 200, Loss 0.0371, Time 23.2s
+Step 300, Loss 0.0300, Time 34.7s
+Step 400, Loss 0.0275, Time 46.4s
+Step 500, Loss 0.0282, Time 58.2s
+A [[0.         0.         0.28947368]
+ [0.         0.         0.34210527]
+ [0.         0.         0.        ]]
+SQ 0.10526315867900848
+OSQ 0.10526315867900848
+cpu
+Step 100, Loss 0.1765, Time 11.4s
+Step 200, Loss 0.0415, Time 23.0s
+Step 300, Loss 0.0317, Time 34.5s
+Step 400, Loss 0.0292, Time 46.1s
+Step 500, Loss 0.0281, Time 57.7s
+A [[0.         0.         0.375     ]
+ [0.         0.         0.30000001]
+ [0.         0.         0.        ]]
+SQ 0.11250000198682149
+OSQ 0.11250000198682149
+cpu
+Step 100, Loss 0.1517, Time 11.4s
+Step 200, Loss 0.0363, Time 23.0s
+Step 300, Loss 0.0294, Time 34.5s
+Step 400, Loss 0.0272, Time 46.0s
+Step 500, Loss 0.0267, Time 57.7s
+A [[0.      0.      0.21875]
+ [0.      0.      0.2    ]
+ [0.      0.      0.25   ]]
+SQ -0.013541666169961289
+OSQ 0.011458332339922592
+cpu
+Step 100, Loss 0.1665, Time 11.5s
+Step 200, Loss 0.0402, Time 23.2s
+Step 300, Loss 0.0288, Time 34.8s
+Step 400, Loss 0.0260, Time 46.5s
+Step 500, Loss 0.0248, Time 58.2s
+A [[0.      0.      0.21875]
+ [0.      0.      0.25   ]
+ [0.      0.      0.     ]]
+SQ 0.078125
+OSQ 0.078125
+cpu
+Step 100, Loss 0.1984, Time 11.5s
+Step 200, Loss 0.1225, Time 23.2s
+Step 300, Loss 0.0410, Time 34.7s
+Step 400, Loss 0.0298, Time 46.3s
+Step 500, Loss 0.0275, Time 58.1s
+A [[0.         0.         0.23684211]
+ [0.         0.         0.16666667]
+ [0.         0.         0.        ]]
+SQ 0.06725146373112996
+OSQ 0.06725146373112996
+cpu
+Step 100, Loss 0.2075, Time 11.7s
+Step 200, Loss 0.0464, Time 23.5s
+Step 300, Loss 0.0305, Time 35.1s
+Step 400, Loss 0.0288, Time 47.0s
+Step 500, Loss 0.0282, Time 58.8s
+A [[0.         0.         0.29411766]
+ [0.         0.         0.30952382]
+ [0.         0.         0.        ]]
+SQ 0.10060691336790721
+OSQ 0.10060691336790721
+-------------------------------iteration:  7
+cpu
+Step 100, Loss 0.1595, Time 11.5s
+Step 200, Loss 0.0329, Time 23.3s
+Step 300, Loss 0.0271, Time 34.9s
+Step 400, Loss 0.0257, Time 46.7s
+Step 500, Loss 0.0237, Time 58.6s
+A [[0.        0.        0.2857143]
+ [0.        0.        0.25     ]
+ [0.        0.        0.2857143]]
+SQ -0.00595238308111827
+OSQ 0.01190476616223654
+cpu
+Step 100, Loss 0.1651, Time 11.4s
+Step 200, Loss 0.0339, Time 23.0s
+Step 300, Loss 0.0293, Time 34.4s
+Step 400, Loss 0.0276, Time 46.0s
+Step 500, Loss 0.0261, Time 57.6s
+A [[0.         0.         0.31818181]
+ [0.         0.         0.23076923]
+ [0.         0.         0.        ]]
+SQ 0.09149184077978134
+OSQ 0.09149184077978134
+cpu
+Step 100, Loss 0.2046, Time 11.4s
+Step 200, Loss 0.0508, Time 23.0s
+Step 300, Loss 0.0303, Time 34.3s
+Step 400, Loss 0.0286, Time 46.0s
+Step 500, Loss 0.0272, Time 57.6s
+A [[0.         0.         0.11111111]
+ [0.         0.         0.2       ]
+ [0.         0.         0.        ]]
+SQ 0.05185185248653094
+OSQ 0.05185185248653094
+cpu
+Step 100, Loss 0.1904, Time 11.4s
+Step 200, Loss 0.0593, Time 22.9s
+Step 300, Loss 0.0307, Time 34.4s
+Step 400, Loss 0.0295, Time 46.1s
+Step 500, Loss 0.0273, Time 57.7s
+A [[0.         0.         0.21212122]
+ [0.         0.         0.44999999]
+ [0.         0.         0.        ]]
+SQ 0.11035353442033131
+OSQ 0.11035353442033131
+cpu
+Step 100, Loss 0.1658, Time 11.3s
+Step 200, Loss 0.0377, Time 22.9s
+Step 300, Loss 0.0257, Time 34.3s
+Step 400, Loss 0.0251, Time 45.8s
+Step 500, Loss 0.0235, Time 57.5s
+A [[0.         0.         0.43333334]
+ [0.         0.         0.18181819]
+ [0.         0.         0.        ]]
+SQ 0.10252525409062703
+OSQ 0.10252525409062703
+cpu
+Step 100, Loss 0.2024, Time 11.3s
+Step 200, Loss 0.0396, Time 22.9s
+Step 300, Loss 0.0288, Time 34.3s
+Step 400, Loss 0.0283, Time 45.8s
+Step 500, Loss 0.0270, Time 57.4s
+A [[0.         0.         0.        ]
+ [0.         0.         0.46153846]
+ [0.         0.         0.        ]]
+SQ 0.07692307730515797
+OSQ 0.07692307730515797
+cpu
+Step 100, Loss 0.1955, Time 11.4s
+Step 200, Loss 0.0591, Time 23.0s
+Step 300, Loss 0.0286, Time 34.5s
+Step 400, Loss 0.0276, Time 46.1s
+Step 500, Loss 0.0261, Time 57.8s
+A [[0.         0.         0.        ]
+ [0.         0.         0.35714287]
+ [0.         0.         0.        ]]
+SQ 0.059523810942967735
+OSQ 0.059523810942967735
+cpu
+Step 100, Loss 0.1896, Time 11.4s
+Step 200, Loss 0.1005, Time 23.0s
+Step 300, Loss 0.0322, Time 34.4s
+Step 400, Loss 0.0289, Time 46.0s
+Step 500, Loss 0.0263, Time 57.7s
+A [[0.         0.         0.31818181]
+ [0.         0.         0.30000001]
+ [0.         0.         0.        ]]
+SQ 0.10303030411402385
+OSQ 0.10303030411402385
+cpu
+Step 100, Loss 0.1545, Time 11.5s
+Step 200, Loss 0.0322, Time 23.2s
+Step 300, Loss 0.0281, Time 34.8s
+Step 400, Loss 0.0276, Time 46.6s
+Step 500, Loss 0.0267, Time 58.4s
+A [[0.         0.         0.1875    ]
+ [0.         0.         0.15384616]
+ [0.         0.         0.33333334]]
+SQ -0.05422008782625199
+OSQ 0.03552350401878356
+cpu
+Step 100, Loss 0.2097, Time 11.3s
+Step 200, Loss 0.0374, Time 22.9s
+Step 300, Loss 0.0305, Time 34.2s
+Step 400, Loss 0.0288, Time 45.8s
+Step 500, Loss 0.0264, Time 57.4s
+A [[0.    0.    0.25 ]
+ [0.    0.    0.375]
+ [0.    0.    0.   ]]
+SQ 0.10416666666666667
+OSQ 0.10416666666666667
+cpu
+Step 100, Loss 0.2239, Time 11.6s
+Step 200, Loss 0.0604, Time 23.3s
+Step 300, Loss 0.0302, Time 34.8s
+Step 400, Loss 0.0286, Time 46.5s
+Step 500, Loss 0.0268, Time 58.4s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.34999999]
+ [0.         0.         0.        ]]
+SQ 0.08611111094554265
+OSQ 0.08611111094554265
+cpu
+Step 100, Loss 0.2155, Time 11.5s
+Step 200, Loss 0.0588, Time 23.2s
+Step 300, Loss 0.0332, Time 34.7s
+Step 400, Loss 0.0295, Time 46.4s
+Step 500, Loss 0.0267, Time 58.2s
+A [[0.         0.         0.33333334]
+ [0.         0.         0.2       ]
+ [0.         0.         0.        ]]
+SQ 0.08888889104127884
+OSQ 0.08888889104127884
+cpu
+Step 100, Loss 0.1510, Time 11.5s
+Step 200, Loss 0.0366, Time 23.2s
+Step 300, Loss 0.0286, Time 34.7s
+Step 400, Loss 0.0260, Time 46.5s
+Step 500, Loss 0.0248, Time 58.3s
+A [[0.         0.         0.32499999]
+ [0.         0.         0.17857143]
+ [0.         0.         0.125     ]]
+SQ 0.042261903484662376
+OSQ 0.042261903484662376
+cpu
+Step 100, Loss 0.1944, Time 11.4s
+Step 200, Loss 0.0443, Time 23.0s
+Step 300, Loss 0.0299, Time 34.4s
+Step 400, Loss 0.0270, Time 46.0s
+Step 500, Loss 0.0266, Time 57.7s
+A [[0.         0.         0.15000001]
+ [0.         0.         0.33333334]
+ [0.         0.         0.        ]]
+SQ 0.08055555820465088
+OSQ 0.08055555820465088
+cpu
+Step 100, Loss 0.1698, Time 11.3s
+Step 200, Loss 0.0393, Time 22.9s
+Step 300, Loss 0.0306, Time 34.2s
+Step 400, Loss 0.0276, Time 45.7s
+Step 500, Loss 0.0268, Time 57.3s
+A [[0.         0.         0.3125    ]
+ [0.         0.         0.16666667]
+ [0.         0.         0.        ]]
+SQ 0.0798611119389534
+OSQ 0.0798611119389534
+cpu
+Step 100, Loss 0.1970, Time 11.2s
+Step 200, Loss 0.1160, Time 22.6s
+Step 300, Loss 0.1246, Time 34.0s
+Step 400, Loss 0.0399, Time 45.4s
+Step 500, Loss 0.0280, Time 56.9s
+A [[0.        0.        0.       ]
+ [0.        0.        0.3548387]
+ [0.        0.        0.       ]]
+SQ 0.05913978318373362
+OSQ 0.05913978318373362
+cpu
+Step 100, Loss 0.2052, Time 11.4s
+Step 200, Loss 0.1202, Time 23.2s
+Step 300, Loss 0.1007, Time 34.6s
+Step 400, Loss 0.0310, Time 46.3s
+Step 500, Loss 0.0256, Time 58.0s
+A [[0.         0.         0.32352942]
+ [0.         0.         0.25      ]
+ [0.         0.         0.        ]]
+SQ 0.09558823704719543
+OSQ 0.09558823704719543
+cpu
+Step 100, Loss 0.1599, Time 11.6s
+Step 200, Loss 0.0370, Time 23.4s
+Step 300, Loss 0.0505, Time 35.0s
+Step 400, Loss 2046481390799.5298, Time 46.7s
+Step 500, Loss 0.0989, Time 58.5s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.        ]
+ [0.         0.         0.        ]]
+SQ 0.027777778605620067
+OSQ 0.027777778605620067
+cpu
+Step 100, Loss 0.1918, Time 11.3s
+Step 200, Loss 0.0900, Time 22.8s
+Step 300, Loss 0.0302, Time 34.1s
+Step 400, Loss 0.1277, Time 45.7s
+Step 500, Loss 0.0771, Time 57.2s
+A [[0.         0.         0.09090909]
+ [0.         0.         0.1875    ]
+ [0.         0.         0.25      ]]
+SQ -0.03693181773026784
+OSQ 0.04261363546053569
+cpu
+Step 100, Loss 0.1773, Time 11.3s
+Step 200, Loss 0.0993, Time 22.7s
+Step 300, Loss 0.0952, Time 34.0s
+Step 400, Loss 0.0369, Time 45.6s
+Step 500, Loss 0.0280, Time 57.1s
+A [[0.         0.         0.13333334]
+ [0.         0.         0.23076923]
+ [0.         0.         0.1       ]]
+SQ 0.027350428203741714
+OSQ 0.027350428203741714
+-------------------------------iteration:  8
+cpu
+Step 100, Loss 0.1560, Time 11.4s
+Step 200, Loss 0.0336, Time 23.2s
+Step 300, Loss 0.0278, Time 34.6s
+Step 400, Loss 0.0257, Time 46.3s
+Step 500, Loss 0.0241, Time 58.1s
+A [[0.         0.         0.33333334]
+ [0.         0.         0.        ]
+ [0.         0.         0.33333334]]
+SQ -0.055555557211240135
+OSQ 0.11111111442248027
+cpu
+Step 100, Loss 0.1804, Time 11.4s
+Step 200, Loss 0.0391, Time 22.9s
+Step 300, Loss 0.0296, Time 34.4s
+Step 400, Loss 0.0267, Time 46.0s
+Step 500, Loss 0.0259, Time 57.6s
+A [[0.         0.         0.26190478]
+ [0.         0.         0.20588236]
+ [0.         0.         0.        ]]
+SQ 0.07796452194452286
+OSQ 0.07796452194452286
+cpu
+Step 100, Loss 0.1667, Time 11.5s
+Step 200, Loss 0.0434, Time 23.2s
+Step 300, Loss 0.0315, Time 34.7s
+Step 400, Loss 0.0305, Time 46.4s
+Step 500, Loss 0.0274, Time 58.1s
+A [[0.         0.         0.35714287]
+ [0.         0.         0.16666667]
+ [0.         0.         0.        ]]
+SQ 0.0873015895485878
+OSQ 0.0873015895485878
+cpu
+Step 100, Loss 0.2072, Time 11.3s
+Step 200, Loss 0.1176, Time 23.0s
+Step 300, Loss 0.0626, Time 34.4s
+Step 400, Loss 0.0329, Time 46.0s
+Step 500, Loss 0.0277, Time 57.6s
+A [[0.         0.         0.22222222]
+ [0.         0.         0.1       ]
+ [0.         0.         0.        ]]
+SQ 0.05370370422800382
+OSQ 0.05370370422800382
+cpu
+Step 100, Loss 0.1473, Time 11.4s
+Step 200, Loss 0.0316, Time 23.1s
+Step 300, Loss 0.0277, Time 34.7s
+Step 400, Loss 0.0270, Time 46.4s
+Step 500, Loss 0.0262, Time 58.1s
+A [[0.         0.         0.27272728]
+ [0.         0.         0.        ]
+ [0.         0.         0.35294119]]
+SQ -0.07219251493612926
+OSQ 0.10427807768185933
+cpu
+Step 100, Loss 0.1791, Time 11.3s
+Step 200, Loss 0.0333, Time 23.0s
+Step 300, Loss 0.0285, Time 34.4s
+Step 400, Loss 0.0270, Time 45.9s
+Step 500, Loss 0.0262, Time 57.5s
+A [[0.         0.         0.05714286]
+ [0.         0.         0.29166666]
+ [0.         0.         0.        ]]
+SQ 0.05813491903245449
+OSQ 0.05813491903245449
+cpu
+Step 100, Loss 0.1999, Time 11.3s
+Step 200, Loss 0.0459, Time 22.8s
+Step 300, Loss 0.0310, Time 34.2s
+Step 400, Loss 0.0294, Time 45.7s
+Step 500, Loss 0.0277, Time 57.2s
+A [[0.         0.         0.20833333]
+ [0.         0.         0.30769232]
+ [0.         0.         0.        ]]
+SQ 0.0860042745868365
+OSQ 0.0860042745868365
+cpu
+Step 100, Loss 0.1655, Time 11.6s
+Step 200, Loss 0.0890, Time 23.4s
+Step 300, Loss 0.0326, Time 35.0s
+Step 400, Loss 0.0276, Time 46.8s
+Step 500, Loss 0.0265, Time 58.6s
+A [[0.         0.         0.26923078]
+ [0.         0.         0.08333334]
+ [0.         0.         0.33333334]]
+SQ -0.05235042795538903
+OSQ 0.07264957576990128
+cpu
+Step 100, Loss 0.1690, Time 11.4s
+Step 200, Loss 0.0317, Time 23.0s
+Step 300, Loss 0.0275, Time 34.4s
+Step 400, Loss 0.0253, Time 46.0s
+Step 500, Loss 0.0242, Time 57.7s
+A [[0.         0.         0.2857143 ]
+ [0.         0.         0.26666668]
+ [0.         0.         0.        ]]
+SQ 0.09206349651018779
+OSQ 0.09206349651018779
+cpu
+Step 100, Loss 0.1169, Time 11.5s
+Step 200, Loss 0.0316, Time 23.2s
+Step 300, Loss 0.0294, Time 34.8s
+Step 400, Loss 0.0265, Time 46.4s
+Step 500, Loss 0.0257, Time 58.2s
+A [[0.         0.         0.75      ]
+ [0.         0.         0.28947368]
+ [0.         0.         0.12903225]]
+SQ 0.13023486236731213
+OSQ 0.13023486236731213
+cpu
+Step 100, Loss 0.2239, Time 11.3s
+Step 200, Loss 0.0560, Time 22.8s
+Step 300, Loss 0.0306, Time 34.1s
+Step 400, Loss 0.0279, Time 45.5s
+Step 500, Loss 0.0267, Time 57.1s
+A [[0.         0.         0.27272728]
+ [0.         0.         0.30769232]
+ [0.         0.         0.        ]]
+SQ 0.09673660000165303
+OSQ 0.09673660000165303
+cpu
+Step 100, Loss 0.1803, Time 11.4s
+Step 200, Loss 0.0729, Time 22.9s
+Step 300, Loss 0.0313, Time 34.3s
+Step 400, Loss 0.0274, Time 45.9s
+Step 500, Loss 0.0268, Time 57.6s
+A [[0.         0.         0.2857143 ]
+ [0.         0.         0.29166666]
+ [0.         0.         0.        ]]
+SQ 0.09623015920321147
+OSQ 0.09623015920321147
+cpu
+Step 100, Loss 0.1367, Time 11.2s
+Step 200, Loss 0.0300, Time 22.8s
+Step 300, Loss 0.0273, Time 34.1s
+Step 400, Loss 0.0268, Time 45.5s
+Step 500, Loss 0.0253, Time 57.1s
+A [[0.         0.         0.07142857]
+ [0.         0.         0.23076923]
+ [0.         0.         0.        ]]
+SQ 0.05036630108952522
+OSQ 0.05036630108952522
+cpu
+Step 100, Loss 0.1774, Time 11.5s
+Step 200, Loss 0.0402, Time 23.3s
+Step 300, Loss 0.0304, Time 34.8s
+Step 400, Loss 0.0269, Time 46.5s
+Step 500, Loss 0.0263, Time 58.3s
+A [[0.         0.         0.375     ]
+ [0.         0.         0.30000001]
+ [0.         0.         0.        ]]
+SQ 0.11250000198682149
+OSQ 0.11250000198682149
+cpu
+Step 100, Loss 0.1750, Time 11.4s
+Step 200, Loss 0.0996, Time 22.9s
+Step 300, Loss 0.0329, Time 34.3s
+Step 400, Loss 0.0276, Time 45.8s
+Step 500, Loss 0.0270, Time 57.4s
+A [[0.         0.         0.14285715]
+ [0.         0.         0.19047619]
+ [0.         0.         0.11111111]]
+SQ 0.01851851989825567
+OSQ 0.01851851989825567
+cpu
+Step 100, Loss 0.2056, Time 11.5s
+Step 200, Loss 0.0835, Time 23.1s
+Step 300, Loss 0.0321, Time 34.6s
+Step 400, Loss 0.0284, Time 46.2s
+Step 500, Loss 0.0279, Time 57.9s
+A [[0.   0.   0.  ]
+ [0.   0.   0.25]
+ [0.   0.   0.  ]]
+SQ 0.041666666666666664
+OSQ 0.041666666666666664
+cpu
+Step 100, Loss 0.2049, Time 11.5s
+Step 200, Loss 0.0576, Time 23.3s
+Step 300, Loss 0.0309, Time 34.8s
+Step 400, Loss 0.0286, Time 46.5s
+Step 500, Loss 0.0259, Time 58.3s
+A [[0.         0.         0.36363637]
+ [0.         0.         0.        ]
+ [0.         0.         0.11111111]]
+SQ 0.023569025099277496
+OSQ 0.0791245810687542
+cpu
+Step 100, Loss 0.1937, Time 11.5s
+Step 200, Loss 0.0422, Time 23.3s
+Step 300, Loss 0.0315, Time 35.0s
+Step 400, Loss 0.0280, Time 46.7s
+Step 500, Loss 0.0247, Time 58.5s
+A [[0.         0.         0.44444445]
+ [0.         0.         0.33333334]
+ [0.         0.         0.58333331]]
+SQ -0.06481480598449707
+OSQ 0.06018517911434172
+cpu
+Step 100, Loss 0.1935, Time 11.7s
+Step 200, Loss 0.0527, Time 23.6s
+Step 300, Loss 0.0326, Time 35.3s
+Step 400, Loss 0.0280, Time 47.1s
+Step 500, Loss 0.0280, Time 59.1s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.21428572]
+ [0.         0.         0.1923077 ]]
+SQ 0.013278387486934662
+OSQ 0.013278387486934662
+cpu
+Step 100, Loss 0.2108, Time 11.4s
+Step 200, Loss 0.1018, Time 23.0s
+Step 300, Loss 0.0328, Time 34.4s
+Step 400, Loss 0.0296, Time 46.0s
+Step 500, Loss 0.0271, Time 57.6s
+A [[0.         0.         0.        ]
+ [0.         0.         0.39473686]
+ [0.         0.         0.15000001]]
+SQ 0.015789474050203957
+OSQ 0.0907894770304362
+-------------------------------iteration:  9
+cpu
+Step 100, Loss 0.1498, Time 11.3s
+Step 200, Loss 0.0317, Time 22.9s
+Step 300, Loss 0.0276, Time 34.4s
+Step 400, Loss 0.0271, Time 46.0s
+Step 500, Loss 0.0266, Time 57.7s
+A [[0.         0.         0.25      ]
+ [0.         0.         0.11428571]
+ [0.         0.         0.34375   ]]
+SQ -0.05386904751261075
+OSQ 0.060863095025221504
+cpu
+Step 100, Loss 0.2058, Time 11.6s
+Step 200, Loss 0.0441, Time 23.3s
+Step 300, Loss 0.0312, Time 34.9s
+Step 400, Loss 0.0278, Time 46.7s
+Step 500, Loss 0.0271, Time 58.5s
+A [[0.         0.         0.23333333]
+ [0.         0.         0.08108108]
+ [0.         0.         0.2       ]]
+SQ -0.01426426569620768
+OSQ 0.04519519706567128
+cpu
+Step 100, Loss 0.2067, Time 11.5s
+Step 200, Loss 0.1589, Time 23.2s
+Step 300, Loss 0.0647, Time 34.7s
+Step 400, Loss 0.0293, Time 46.5s
+Step 500, Loss 0.0279, Time 58.2s
+A [[0.         0.         0.40000001]
+ [0.         0.         0.2       ]
+ [0.         0.         0.        ]]
+SQ 0.10000000149011612
+OSQ 0.10000000149011612
+cpu
+Step 100, Loss 0.1963, Time 11.4s
+Step 200, Loss 0.0937, Time 23.0s
+Step 300, Loss 0.0345, Time 34.4s
+Step 400, Loss 0.0278, Time 46.1s
+Step 500, Loss 0.0271, Time 57.8s
+A [[0.         0.         0.30000001]
+ [0.         0.         0.2857143 ]
+ [0.         0.         0.        ]]
+SQ 0.09761905173460643
+OSQ 0.09761905173460643
+cpu
+Step 100, Loss 0.1608, Time 11.4s
+Step 200, Loss 0.0346, Time 23.1s
+Step 300, Loss 0.0282, Time 34.7s
+Step 400, Loss 0.0259, Time 46.4s
+Step 500, Loss 0.0247, Time 58.1s
+A [[0.         0.         0.        ]
+ [0.         0.         0.20833333]
+ [0.         0.         0.1923077 ]]
+SQ -0.02938034385442733
+OSQ 0.06677350401878357
+cpu
+Step 100, Loss 0.1603, Time 11.6s
+Step 200, Loss 0.0353, Time 23.4s
+Step 300, Loss 0.0292, Time 35.0s
+Step 400, Loss 0.0272, Time 46.8s
+Step 500, Loss 0.0263, Time 58.6s
+A [[0.         0.         0.30000001]
+ [0.         0.         0.3611111 ]
+ [0.         0.         0.14285715]]
+SQ 0.06256613632043204
+OSQ 0.06256613632043204
+cpu
+Step 100, Loss 0.2032, Time 11.5s
+Step 200, Loss 0.0553, Time 23.2s
+Step 300, Loss 0.0342, Time 34.7s
+Step 400, Loss 0.0294, Time 46.4s
+Step 500, Loss 0.0269, Time 58.1s
+A [[0.         0.         0.30000001]
+ [0.         0.         0.125     ]
+ [0.         0.         0.        ]]
+SQ 0.07083333532015483
+OSQ 0.07083333532015483
+cpu
+Step 100, Loss 0.2002, Time 11.6s
+Step 200, Loss 0.0604, Time 23.3s
+Step 300, Loss 0.0303, Time 34.9s
+Step 400, Loss 0.0273, Time 46.6s
+Step 500, Loss 0.0271, Time 58.4s
+A [[0.         0.         0.11111111]
+ [0.         0.         0.36363637]
+ [0.         0.         0.25      ]]
+SQ -0.0042087522645791325
+OSQ 0.06523569176594417
+cpu
+Step 100, Loss 0.1801, Time 11.7s
+Step 200, Loss 0.0362, Time 23.5s
+Step 300, Loss 0.0297, Time 35.2s
+Step 400, Loss 0.0274, Time 47.0s
+Step 500, Loss 0.0260, Time 59.0s
+A [[0.         0.         0.27272728]
+ [0.         0.         0.        ]
+ [0.         0.         0.33333334]]
+SQ -0.0656565676132838
+OSQ 0.1010101040204366
+cpu
+Step 100, Loss 0.1837, Time 11.6s
+Step 200, Loss 0.0391, Time 23.4s
+Step 300, Loss 0.0305, Time 35.0s
+Step 400, Loss 0.0282, Time 46.8s
+Step 500, Loss 0.0269, Time 58.6s
+A [[0.   0.   0.25]
+ [0.   0.   0.44]
+ [0.   0.   0.  ]]
+SQ 0.1149999996026357
+OSQ 0.1149999996026357
+cpu
+Step 100, Loss 0.1620, Time 11.3s
+Step 200, Loss 0.0417, Time 23.0s
+Step 300, Loss 0.0308, Time 34.3s
+Step 400, Loss 0.0279, Time 45.9s
+Step 500, Loss 0.0272, Time 57.5s
+A [[0.         0.         0.14285715]
+ [0.         0.         0.29166666]
+ [0.         0.         0.        ]]
+SQ 0.072420634329319
+OSQ 0.072420634329319
+cpu
+Step 100, Loss 0.1721, Time 11.7s
+Step 200, Loss 0.0461, Time 23.5s
+Step 300, Loss 0.0298, Time 35.1s
+Step 400, Loss 0.0277, Time 46.9s
+Step 500, Loss 0.0278, Time 58.8s
+A [[0.         0.         0.1923077 ]
+ [0.         0.         0.22222222]
+ [0.         0.         0.        ]]
+SQ 0.0690883199373881
+OSQ 0.0690883199373881
+cpu
+Step 100, Loss 0.1736, Time 11.4s
+Step 200, Loss 0.0355, Time 23.0s
+Step 300, Loss 0.0281, Time 34.5s
+Step 400, Loss 0.0271, Time 46.1s
+Step 500, Loss 0.0252, Time 57.8s
+A [[0.         0.         0.22222222]
+ [0.         0.         0.08695652]
+ [0.         0.         0.55555558]]
+SQ -0.13365540280938148
+OSQ 0.10064412653446198
+cpu
+Step 100, Loss 0.1426, Time 11.5s
+Step 200, Loss 0.0331, Time 23.2s
+Step 300, Loss 0.0282, Time 34.6s
+Step 400, Loss 0.0270, Time 46.3s
+Step 500, Loss 0.0263, Time 58.0s
+A [[0.         0.         0.26923078]
+ [0.         0.         0.18181819]
+ [0.         0.         0.        ]]
+SQ 0.07517482837041219
+OSQ 0.07517482837041219
+cpu
+Step 100, Loss 0.2039, Time 11.5s
+Step 200, Loss 0.0794, Time 23.1s
+Step 300, Loss 0.0313, Time 34.6s
+Step 400, Loss 0.0284, Time 46.2s
+Step 500, Loss 0.0269, Time 57.9s
+A [[0.         0.         0.        ]
+ [0.         0.         0.42307693]
+ [0.         0.         0.        ]]
+SQ 0.07051282127698262
+OSQ 0.07051282127698262
+cpu
+Step 100, Loss 0.1729, Time 11.4s
+Step 200, Loss 0.1107, Time 23.0s
+Step 300, Loss 0.0359, Time 34.4s
+Step 400, Loss 0.0298, Time 45.9s
+Step 500, Loss 0.0274, Time 57.6s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.36363637]
+ [0.         0.         0.        ]]
+SQ 0.08838384101788203
+OSQ 0.08838384101788203
+cpu
+Step 100, Loss 4742584.6368, Time 11.5s
+Step 200, Loss 0.0443, Time 23.2s
+Step 300, Loss 0.0329, Time 34.8s
+Step 400, Loss 0.0284, Time 46.5s
+Step 500, Loss 0.0265, Time 58.2s
+A [[0.         0.         0.23999999]
+ [0.         0.         0.19047619]
+ [0.         0.         0.        ]]
+SQ 0.071746031443278
+OSQ 0.071746031443278
+cpu
+Step 100, Loss 0.1735, Time 11.3s
+Step 200, Loss 0.0645, Time 22.8s
+Step 300, Loss 0.0303, Time 34.2s
+Step 400, Loss 0.0282, Time 45.8s
+Step 500, Loss 0.0265, Time 57.3s
+A [[0.         0.         0.21428572]
+ [0.         0.         0.44444445]
+ [0.         0.         0.19047619]]
+SQ 0.046296296020348876
+OSQ 0.046296296020348876
+cpu
+Step 100, Loss 0.1730, Time 11.5s
+Step 200, Loss 0.0408, Time 23.3s
+Step 300, Loss 0.0300, Time 34.8s
+Step 400, Loss 0.0282, Time 46.5s
+Step 500, Loss 0.0321, Time 58.3s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.2       ]
+ [0.         0.         0.        ]]
+SQ 0.061111112435658775
+OSQ 0.061111112435658775
+cpu
+Step 100, Loss 0.2145, Time 11.5s
+Step 200, Loss 0.1180, Time 23.2s
+Step 300, Loss 0.0849, Time 34.7s
+Step 400, Loss 0.0301, Time 46.5s
+Step 500, Loss 0.0289, Time 58.2s
+A [[0.         0.         0.23076923]
+ [0.         0.         0.27777779]
+ [0.         0.         0.        ]]
+SQ 0.08475783715645473
+OSQ 0.08475783715645473
+-------------------------------iteration:  10
+cpu
+Step 100, Loss 0.1629, Time 11.5s
+Step 200, Loss 0.0319, Time 23.2s
+Step 300, Loss 0.0264, Time 34.7s
+Step 400, Loss 0.0253, Time 46.5s
+Step 500, Loss 0.0252, Time 58.3s
+A [[0.         0.         0.        ]
+ [0.         0.         0.125     ]
+ [0.         0.         0.42857143]]
+SQ -0.12202381094296773
+OSQ 0.09226190547148387
+cpu
+Step 100, Loss 0.1901, Time 11.5s
+Step 200, Loss 0.0766, Time 23.1s
+Step 300, Loss 0.0308, Time 34.5s
+Step 400, Loss 0.0471, Time 46.1s
+Step 500, Loss 0.0264, Time 57.8s
+A [[0.         0.         0.44999999]
+ [0.         0.         0.        ]
+ [0.         0.         0.26666668]]
+SQ -0.013888895511627197
+OSQ 0.11944444477558136
+cpu
+Step 100, Loss 0.1921, Time 11.5s
+Step 200, Loss 0.0918, Time 23.3s
+Step 300, Loss 0.0326, Time 34.8s
+Step 400, Loss 0.0289, Time 46.6s
+Step 500, Loss 0.0270, Time 58.3s
+A [[0.         0.         0.13793103]
+ [0.         0.         0.2857143 ]
+ [0.         0.         0.        ]]
+SQ 0.07060755540927251
+OSQ 0.07060755540927251
+cpu
+Step 100, Loss 0.1942, Time 11.6s
+Step 200, Loss 0.0771, Time 23.4s
+Step 300, Loss 0.0345, Time 35.0s
+Step 400, Loss 0.0289, Time 46.8s
+Step 500, Loss 0.0282, Time 58.7s
+A [[0.         0.         0.19047619]
+ [0.         0.         0.2       ]
+ [0.         0.         0.        ]]
+SQ 0.06507936616738637
+OSQ 0.06507936616738637
+cpu
+Step 100, Loss 0.1501, Time 11.3s
+Step 200, Loss 0.0290, Time 22.9s
+Step 300, Loss 0.0269, Time 34.3s
+Step 400, Loss 0.0317, Time 45.8s
+Step 500, Loss 0.0248, Time 57.4s
+A [[0.         0.         0.        ]
+ [0.         0.         0.19047619]
+ [0.         0.         0.2       ]]
+SQ -0.034920635322729744
+OSQ 0.06507936616738637
+cpu
+Step 100, Loss 0.1741, Time 11.3s
+Step 200, Loss 0.0357, Time 23.0s
+Step 300, Loss 0.0291, Time 34.4s
+Step 400, Loss 0.0268, Time 45.9s
+Step 500, Loss 0.0262, Time 57.6s
+A [[0.         0.         0.22727273]
+ [0.         0.         0.35714287]
+ [0.         0.         0.        ]]
+SQ 0.09740259995063145
+OSQ 0.09740259995063145
+cpu
+Step 100, Loss 0.1750, Time 11.4s
+Step 200, Loss 0.0954, Time 23.1s
+Step 300, Loss 0.0306, Time 34.6s
+Step 400, Loss 0.0279, Time 46.3s
+Step 500, Loss 0.0263, Time 58.0s
+A [[0.         0.         0.47058824]
+ [0.         0.         0.11538462]
+ [0.         0.         0.        ]]
+SQ 0.09766214216748874
+OSQ 0.09766214216748874
+cpu
+Step 100, Loss 0.2187, Time 11.5s
+Step 200, Loss 0.1196, Time 23.2s
+Step 300, Loss 0.0928, Time 34.7s
+Step 400, Loss 0.0349, Time 46.4s
+Step 500, Loss 0.0289, Time 58.2s
+A [[0.         0.         0.2857143 ]
+ [0.         0.         0.18421052]
+ [0.         0.         0.        ]]
+SQ 0.07832080374161403
+OSQ 0.07832080374161403
+cpu
+Step 100, Loss 0.1844, Time 11.3s
+Step 200, Loss 0.0342, Time 22.9s
+Step 300, Loss 0.0263, Time 34.4s
+Step 400, Loss 0.0256, Time 45.9s
+Step 500, Loss 0.0243, Time 57.6s
+A [[0.         0.         0.        ]
+ [0.         0.         0.30434781]
+ [0.         0.         0.68181819]]
+SQ -0.1765480935573578
+OSQ 0.16436100006103516
+cpu
+Step 100, Loss 0.1499, Time 11.4s
+Step 200, Loss 0.0330, Time 23.2s
+Step 300, Loss 0.0291, Time 34.6s
+Step 400, Loss 0.0275, Time 46.3s
+Step 500, Loss 0.0263, Time 58.0s
+A [[0.         0.         0.        ]
+ [0.         0.         0.4375    ]
+ [0.         0.         0.16666667]]
+SQ 0.017361109455426536
+OSQ 0.10069444527228673
+cpu
+Step 100, Loss 0.1977, Time 11.3s
+Step 200, Loss 0.0555, Time 22.9s
+Step 300, Loss 0.0303, Time 34.2s
+Step 400, Loss 0.0279, Time 45.7s
+Step 500, Loss 0.0260, Time 57.3s
+A [[0.         0.         0.11111111]
+ [0.         0.         0.18181819]
+ [0.         0.         0.5714286 ]]
+SQ -0.14165464912851652
+OSQ 0.08850409338871637
+cpu
+Step 100, Loss 0.1887, Time 11.4s
+Step 200, Loss 0.1076, Time 23.1s
+Step 300, Loss 0.0321, Time 34.7s
+Step 400, Loss 0.0288, Time 46.4s
+Step 500, Loss 0.0276, Time 58.1s
+A [[0.         0.         0.40000001]
+ [0.         0.         0.33333334]
+ [0.         0.         0.        ]]
+SQ 0.12222222487131755
+OSQ 0.12222222487131755
+cpu
+Step 100, Loss 0.1656, Time 11.3s
+Step 200, Loss 0.0365, Time 22.7s
+Step 300, Loss 0.0292, Time 34.1s
+Step 400, Loss 0.0260, Time 45.6s
+Step 500, Loss 0.0250, Time 57.3s
+A [[0.         0.         0.33333334]
+ [0.         0.         0.2857143 ]
+ [0.         0.         0.14285715]]
+SQ 0.055555557211240135
+OSQ 0.055555557211240135
+cpu
+Step 100, Loss 0.1989, Time 11.5s
+Step 200, Loss 0.0479, Time 23.2s
+Step 300, Loss 0.0305, Time 34.8s
+Step 400, Loss 0.0271, Time 46.5s
+Step 500, Loss 0.0266, Time 58.3s
+A [[0.         0.         0.23076923]
+ [0.         0.         0.21875   ]
+ [0.         0.         0.        ]]
+SQ 0.07491987198591232
+OSQ 0.07491987198591232
+cpu
+Step 100, Loss 0.2073, Time 11.3s
+Step 200, Loss 0.0565, Time 22.8s
+Step 300, Loss 0.0297, Time 34.2s
+Step 400, Loss 0.0276, Time 45.7s
+Step 500, Loss 0.0257, Time 57.3s
+A [[0.         0.         0.30952382]
+ [0.         0.         0.16666667]
+ [0.         0.         0.37931034]]
+SQ -0.047071697811285645
+OSQ 0.05925013621648153
+cpu
+Step 100, Loss 0.1839, Time 11.5s
+Step 200, Loss 0.0617, Time 23.1s
+Step 300, Loss 0.0287, Time 34.5s
+Step 400, Loss 0.0257, Time 46.1s
+Step 500, Loss 0.0254, Time 57.8s
+A [[0.         0.         0.2       ]
+ [0.         0.         0.26923078]
+ [0.         0.         0.        ]]
+SQ 0.07820513099431992
+OSQ 0.07820513099431992
+cpu
+Step 100, Loss 2.9447, Time 11.5s
+Step 200, Loss 0.0413, Time 23.2s
+Step 300, Loss 0.0345, Time 34.7s
+Step 400, Loss 0.0365, Time 46.3s
+Step 500, Loss 0.0272, Time 58.0s
+A [[0.         0.         0.        ]
+ [0.         0.         0.34999999]
+ [0.         0.         0.16666667]]
+SQ 0.00277777512868245
+OSQ 0.08611111094554265
+cpu
+Step 100, Loss 0.1466, Time 11.4s
+Step 200, Loss 0.0355, Time 23.1s
+Step 300, Loss 0.0293, Time 34.6s
+Step 400, Loss 0.0281, Time 46.3s
+Step 500, Loss 0.0269, Time 58.0s
+A [[0.         0.         0.13636364]
+ [0.         0.         0.26666668]
+ [0.         0.         0.46666667]]
+SQ -0.0883838360508283
+OSQ 0.07676767806212108
+cpu
+Step 100, Loss 0.1887, Time 11.4s
+Step 200, Loss 0.0905, Time 23.0s
+Step 300, Loss 0.0319, Time 34.4s
+Step 400, Loss 0.0293, Time 46.0s
+Step 500, Loss 0.0287, Time 57.6s
+A [[0.         0.         0.16666667]
+ [0.         0.         0.30000001]
+ [0.         0.         0.        ]]
+SQ 0.07777778059244156
+OSQ 0.07777778059244156
+cpu
+Step 100, Loss 0.1950, Time 11.3s
+Step 200, Loss 0.1273, Time 22.8s
+Step 300, Loss 0.1074, Time 34.1s
+Step 400, Loss 0.0386, Time 45.6s
+Step 500, Loss 0.0306, Time 57.1s
+A [[0.         0.         0.26923078]
+ [0.         0.         0.26923078]
+ [0.         0.         0.        ]]
+SQ 0.08974359432856242
+OSQ 0.08974359432856242
+-------------------------------iteration:  11

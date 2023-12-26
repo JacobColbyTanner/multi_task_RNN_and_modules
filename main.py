@@ -66,7 +66,7 @@ seq_len = 100
 
 
 off_block = [0,0.125,0.25,0.5,1]
-thalamic_bias = [1,2,3]
+thalamic_bias = [0,1,2,3]
 
 ob_S = len(off_block)
 tb_S = len(thalamic_bias)
