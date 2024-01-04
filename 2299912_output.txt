@@ -1,0 +1,917 @@
+cpu
+Step 100, Loss 2.3545, Time 23.8s
+loss, no distance:  tensor(0.1189, grad_fn=<NllLossBackward0>)
+Accuracy:  0.0
+Step 200, Loss 2.2530, Time 47.8s
+loss, no distance:  tensor(0.0736, grad_fn=<NllLossBackward0>)
+Accuracy:  0.03125
+Step 300, Loss 2.2828, Time 72.2s
+loss, no distance:  tensor(0.0548, grad_fn=<NllLossBackward0>)
+Accuracy:  0.4375
+Step 400, Loss 2.3193, Time 96.7s
+loss, no distance:  tensor(0.0286, grad_fn=<NllLossBackward0>)
+Accuracy:  0.3958333333333333
+Step 500, Loss 2.3622, Time 121.2s
+loss, no distance:  tensor(0.0259, grad_fn=<NllLossBackward0>)
+Accuracy:  0.4166666666666667
+Step 600, Loss 2.4159, Time 145.6s
+loss, no distance:  tensor(0.0223, grad_fn=<NllLossBackward0>)
+Accuracy:  0.7083333333333334
+Step 700, Loss 2.4359, Time 169.9s
+loss, no distance:  tensor(0.0285, grad_fn=<NllLossBackward0>)
+Accuracy:  0.53125
+Step 800, Loss 2.4881, Time 193.9s
+loss, no distance:  tensor(0.0213, grad_fn=<NllLossBackward0>)
+Accuracy:  0.7916666666666666
+Step 900, Loss 2.5254, Time 217.9s
+loss, no distance:  tensor(0.0206, grad_fn=<NllLossBackward0>)
+Accuracy:  0.6041666666666666
+Step 1000, Loss 2.5321, Time 242.1s
+loss, no distance:  tensor(0.0180, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8125
+Step 1100, Loss 2.5522, Time 266.1s
+loss, no distance:  tensor(0.0119, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8333333333333334
+Step 1200, Loss 2.5721, Time 290.1s
+loss, no distance:  tensor(0.0166, grad_fn=<NllLossBackward0>)
+Accuracy:  0.828125
+Step 1300, Loss 2.5874, Time 314.1s
+loss, no distance:  tensor(0.0143, grad_fn=<NllLossBackward0>)
+Accuracy:  0.84375
+Step 1400, Loss 2.5938, Time 338.1s
+loss, no distance:  tensor(0.0112, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8125
+Step 1500, Loss 2.6215, Time 362.2s
+loss, no distance:  tensor(0.0288, grad_fn=<NllLossBackward0>)
+Accuracy:  0.515625
+Step 1600, Loss 2.6634, Time 386.0s
+loss, no distance:  tensor(0.0239, grad_fn=<NllLossBackward0>)
+Accuracy:  0.78125
+Step 1700, Loss 2.6844, Time 409.9s
+loss, no distance:  tensor(0.0128, grad_fn=<NllLossBackward0>)
+Accuracy:  0.875
+Step 1800, Loss 2.7044, Time 433.9s
+loss, no distance:  tensor(0.0134, grad_fn=<NllLossBackward0>)
+Accuracy:  0.7916666666666666
+Step 1900, Loss 2.7187, Time 457.9s
+loss, no distance:  tensor(0.0099, grad_fn=<NllLossBackward0>)
+Accuracy:  0.90625
+Step 2000, Loss 2.7257, Time 481.7s
+loss, no distance:  tensor(0.0099, grad_fn=<NllLossBackward0>)
+Accuracy:  0.875
+Step 2100, Loss 2.7354, Time 505.8s
+loss, no distance:  tensor(0.0114, grad_fn=<NllLossBackward0>)
+Accuracy:  0.875
+Step 2200, Loss 2.7425, Time 529.9s
+loss, no distance:  tensor(0.0114, grad_fn=<NllLossBackward0>)
+Accuracy:  0.84375
+Step 2300, Loss 2.7446, Time 554.0s
+loss, no distance:  tensor(0.0072, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8541666666666666
+Step 2400, Loss 2.7490, Time 578.2s
+loss, no distance:  tensor(0.0142, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8125
+Step 2500, Loss 2.7555, Time 601.9s
+loss, no distance:  tensor(0.0087, grad_fn=<NllLossBackward0>)
+Accuracy:  0.875
+Step 2600, Loss 2.7578, Time 625.8s
+loss, no distance:  tensor(0.0130, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8125
+Step 2700, Loss 2.7681, Time 649.7s
+loss, no distance:  tensor(0.0079, grad_fn=<NllLossBackward0>)
+Accuracy:  0.921875
+Step 2800, Loss 2.7701, Time 673.7s
+loss, no distance:  tensor(0.0081, grad_fn=<NllLossBackward0>)
+Accuracy:  0.875
+Step 2900, Loss 2.7785, Time 697.8s
+loss, no distance:  tensor(0.0105, grad_fn=<NllLossBackward0>)
+Accuracy:  0.90625
+Step 3000, Loss 2.7832, Time 721.7s
+loss, no distance:  tensor(0.0115, grad_fn=<NllLossBackward0>)
+Accuracy:  0.84375
+Step 3100, Loss 2.7871, Time 745.8s
+loss, no distance:  tensor(0.0100, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8125
+Step 3200, Loss 2.7946, Time 769.7s
+loss, no distance:  tensor(0.0100, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8125
+Step 3300, Loss 2.8039, Time 793.8s
+loss, no distance:  tensor(0.0113, grad_fn=<NllLossBackward0>)
+Accuracy:  0.875
+Step 3400, Loss 2.8095, Time 817.8s
+loss, no distance:  tensor(0.0077, grad_fn=<NllLossBackward0>)
+Accuracy:  0.890625
+Step 3500, Loss 2.8173, Time 841.8s
+loss, no distance:  tensor(0.0116, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8333333333333334
+Step 3600, Loss 2.8220, Time 865.9s
+loss, no distance:  tensor(0.0087, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8958333333333334
+Step 3700, Loss 2.8277, Time 889.8s
+loss, no distance:  tensor(0.0101, grad_fn=<NllLossBackward0>)
+Accuracy:  0.8333333333333334
+Step 3800, Loss 2.8379, Time 913.7s
+loss, no distance:  tensor(0.0049, grad_fn=<NllLossBackward0>)
+Accuracy:  0.9791666666666666
+cpu
+real accuracy:  0.8984375
+deleting edges:  0
+num deleted:  96.0
+cpu
+next_accuracy:  0.8697916666666666
+deleting edges:  1
+num deleted:  195.0
+cpu
+next_accuracy:  0.8229166666666666
+deleting edges:  2
+num deleted:  293.0
+cpu
+next_accuracy:  0.9010416666666666
+deleting edges:  3
+num deleted:  380.0
+cpu
+next_accuracy:  0.9427083333333333
+deleting edges:  4
+num deleted:  460.0
+cpu
+next_accuracy:  0.87890625
+deleting edges:  5
+num deleted:  548.0
+cpu
+next_accuracy:  0.8932291666666666
+deleting edges:  6
+num deleted:  631.0
+cpu
+next_accuracy:  0.8697916666666666
+deleting edges:  7
+num deleted:  708.0
+cpu
+next_accuracy:  0.8828125
+deleting edges:  8
+num deleted:  789.0
+cpu
+next_accuracy:  0.8723958333333334
+deleting edges:  9
+num deleted:  885.0
+cpu
+next_accuracy:  0.921875
+deleting edges:  10
+num deleted:  1004.0
+cpu
+next_accuracy:  0.890625
+deleting edges:  11
+num deleted:  1117.0
+cpu
+next_accuracy:  0.8919270833333334
+deleting edges:  12
+num deleted:  1196.0
+cpu
+next_accuracy:  0.8528645833333334
+deleting edges:  13
+num deleted:  1283.0
+cpu
+next_accuracy:  0.9036458333333333
+deleting edges:  14
+num deleted:  1386.0
+cpu
+next_accuracy:  0.8971354166666666
+deleting edges:  15
+num deleted:  1484.0
+cpu
+next_accuracy:  0.8515625
+deleting edges:  16
+num deleted:  1565.0
+cpu
+next_accuracy:  0.88671875
+deleting edges:  17
+num deleted:  1661.0
+cpu
+next_accuracy:  0.9140625
+deleting edges:  18
+num deleted:  1754.0
+cpu
+next_accuracy:  0.8684895833333334
+deleting edges:  19
+num deleted:  1845.0
+cpu
+next_accuracy:  0.87890625
+deleting edges:  20
+num deleted:  1933.0
+cpu
+next_accuracy:  0.8658854166666666
+deleting edges:  21
+num deleted:  2031.0
+cpu
+next_accuracy:  0.8841145833333334
+deleting edges:  22
+num deleted:  2118.0
+cpu
+next_accuracy:  0.8645833333333334
+deleting edges:  23
+num deleted:  2227.0
+cpu
+next_accuracy:  0.8658854166666666
+deleting edges:  24
+num deleted:  2318.0
+cpu
+next_accuracy:  0.9127604166666666
+deleting edges:  25
+num deleted:  2427.0
+cpu
+next_accuracy:  0.8763020833333334
+deleting edges:  26
+num deleted:  2512.0
+cpu
+next_accuracy:  0.9075520833333334
+deleting edges:  27
+num deleted:  2604.0
+cpu
+next_accuracy:  0.9049479166666667
+deleting edges:  28
+num deleted:  2696.0
+cpu
+next_accuracy:  0.88671875
+deleting edges:  29
+num deleted:  2789.0
+cpu
+next_accuracy:  0.85546875
+deleting edges:  30
+num deleted:  2882.0
+cpu
+next_accuracy:  0.83203125
+deleting edges:  31
+num deleted:  2984.0
+cpu
+next_accuracy:  0.8880208333333334
+deleting edges:  32
+num deleted:  3056.0
+cpu
+next_accuracy:  0.875
+deleting edges:  33
+num deleted:  3144.0
+cpu
+next_accuracy:  0.84375
+deleting edges:  34
+num deleted:  3233.0
+cpu
+next_accuracy:  0.8190104166666667
+deleting edges:  35
+num deleted:  3334.0
+cpu
+next_accuracy:  0.84375
+deleting edges:  36
+num deleted:  3431.0
+cpu
+next_accuracy:  0.8697916666666667
+deleting edges:  37
+num deleted:  3538.0
+cpu
+next_accuracy:  0.8294270833333334
+deleting edges:  38
+num deleted:  3630.0
+cpu
+next_accuracy:  0.8528645833333334
+deleting edges:  39
+num deleted:  3726.0
+cpu
+next_accuracy:  0.8606770833333333
+deleting edges:  40
+num deleted:  3815.0
+cpu
+next_accuracy:  0.8854166666666667
+deleting edges:  41
+num deleted:  3910.0
+cpu
+next_accuracy:  0.8255208333333334
+deleting edges:  42
+num deleted:  3999.0
+cpu
+next_accuracy:  0.8372395833333334
+deleting edges:  43
+num deleted:  4099.0
+cpu
+next_accuracy:  0.8125000000000001
+deleting edges:  44
+num deleted:  4187.0
+cpu
+next_accuracy:  0.8216145833333333
+deleting edges:  45
+num deleted:  4270.0
+cpu
+next_accuracy:  0.7513020833333334
+deleting edges:  46
+num deleted:  4369.0
+cpu
+next_accuracy:  0.7825520833333334
+deleting edges:  47
+num deleted:  4468.0
+cpu
+next_accuracy:  0.7734375
+deleting edges:  48
+num deleted:  4559.0
+cpu
+next_accuracy:  0.8033854166666666
+deleting edges:  49
+num deleted:  4656.0
+cpu
+next_accuracy:  0.7591145833333334
+deleting edges:  50
+num deleted:  4759.0
+cpu
+next_accuracy:  0.77734375
+deleting edges:  51
+num deleted:  4844.0
+cpu
+next_accuracy:  0.7239583333333334
+deleting edges:  52
+num deleted:  4927.0
+cpu
+next_accuracy:  0.7604166666666667
+deleting edges:  53
+num deleted:  5024.0
+cpu
+next_accuracy:  0.7565104166666667
+deleting edges:  54
+num deleted:  5112.0
+cpu
+next_accuracy:  0.71875
+deleting edges:  55
+num deleted:  5195.0
+cpu
+next_accuracy:  0.6158854166666666
+deleting edges:  56
+num deleted:  5291.0
+cpu
+next_accuracy:  0.6927083333333334
+deleting edges:  57
+num deleted:  5386.0
+cpu
+next_accuracy:  0.6614583333333334
+deleting edges:  58
+num deleted:  5481.0
+cpu
+next_accuracy:  0.6940104166666666
+deleting edges:  59
+num deleted:  5578.0
+cpu
+next_accuracy:  0.6393229166666666
+deleting edges:  60
+num deleted:  5671.0
+cpu
+next_accuracy:  0.50390625
+deleting edges:  61
+num deleted:  5751.0
+cpu
+next_accuracy:  0.4348958333333333
+deleting edges:  62
+num deleted:  5832.0
+cpu
+next_accuracy:  0.50390625
+deleting edges:  63
+num deleted:  5910.0
+cpu
+next_accuracy:  0.5091145833333334
+deleting edges:  64
+num deleted:  5987.0
+cpu
+next_accuracy:  0.5390625
+deleting edges:  65
+num deleted:  6073.0
+cpu
+next_accuracy:  0.703125
+deleting edges:  66
+num deleted:  6162.0
+cpu
+next_accuracy:  0.52734375
+deleting edges:  67
+num deleted:  6234.0
+cpu
+next_accuracy:  0.5768229166666666
+deleting edges:  68
+num deleted:  6333.0
+cpu
+next_accuracy:  0.4583333333333333
+deleting edges:  69
+num deleted:  6416.0
+cpu
+next_accuracy:  0.49348958333333337
+deleting edges:  70
+num deleted:  6487.0
+cpu
+next_accuracy:  0.328125
+deleting edges:  71
+num deleted:  6581.0
+cpu
+next_accuracy:  0.3958333333333333
+deleting edges:  72
+num deleted:  6655.0
+cpu
+next_accuracy:  0.5520833333333334
+deleting edges:  73
+num deleted:  6742.0
+cpu
+next_accuracy:  0.47395833333333337
+deleting edges:  74
+num deleted:  6813.0
+cpu
+next_accuracy:  0.4869791666666667
+deleting edges:  75
+num deleted:  6893.0
+cpu
+next_accuracy:  0.515625
+deleting edges:  76
+num deleted:  6982.0
+cpu
+next_accuracy:  0.34375
+deleting edges:  77
+num deleted:  7057.0
+cpu
+next_accuracy:  0.4700520833333333
+deleting edges:  78
+num deleted:  7152.0
+cpu
+next_accuracy:  0.34375
+deleting edges:  79
+num deleted:  7220.0
+cpu
+next_accuracy:  0.54296875
+deleting edges:  80
+num deleted:  7309.0
+cpu
+next_accuracy:  0.47526041666666663
+deleting edges:  81
+num deleted:  7394.0
+cpu
+next_accuracy:  0.4609375
+deleting edges:  82
+num deleted:  7472.0
+cpu
+next_accuracy:  0.5013020833333333
+deleting edges:  83
+num deleted:  7549.0
+cpu
+next_accuracy:  0.4088541666666667
+deleting edges:  84
+num deleted:  7620.0
+cpu
+next_accuracy:  0.4609375
+deleting edges:  85
+num deleted:  7702.0
+cpu
+next_accuracy:  0.33203125
+deleting edges:  86
+num deleted:  7782.0
+cpu
+next_accuracy:  0.4700520833333333
+deleting edges:  87
+num deleted:  7848.0
+cpu
+next_accuracy:  0.3776041666666667
+deleting edges:  88
+num deleted:  7924.0
+cpu
+next_accuracy:  0.26953125
+deleting edges:  89
+num deleted:  7982.0
+cpu
+next_accuracy:  0.44921875
+deleting edges:  90
+num deleted:  8043.0
+cpu
+next_accuracy:  0.4856770833333333
+deleting edges:  91
+num deleted:  8109.0
+cpu
+next_accuracy:  0.43619791666666663
+deleting edges:  92
+num deleted:  8170.0
+cpu
+next_accuracy:  0.23567708333333331
+deleting edges:  93
+num deleted:  8223.0
+cpu
+next_accuracy:  0.31640625
+deleting edges:  94
+num deleted:  8291.0
+cpu
+next_accuracy:  0.234375
+deleting edges:  95
+num deleted:  8352.0
+cpu
+next_accuracy:  0.2643229166666667
+deleting edges:  96
+num deleted:  8411.0
+cpu
+next_accuracy:  0.265625
+deleting edges:  97
+num deleted:  8471.0
+cpu
+next_accuracy:  0.22395833333333334
+deleting edges:  98
+num deleted:  8518.0
+cpu
+next_accuracy:  0.22135416666666666
+deleting edges:  99
+num deleted:  8567.0
+cpu
+next_accuracy:  0.2565104166666667
+deleting edges:  100
+num deleted:  8615.0
+cpu
+next_accuracy:  0.18359375
+deleting edges:  101
+num deleted:  8654.0
+cpu
+next_accuracy:  0.24088541666666666
+deleting edges:  102
+num deleted:  8701.0
+cpu
+next_accuracy:  0.296875
+deleting edges:  103
+num deleted:  8747.0
+cpu
+next_accuracy:  0.28125
+deleting edges:  104
+num deleted:  8787.0
+cpu
+next_accuracy:  0.265625
+deleting edges:  105
+num deleted:  8813.0
+cpu
+next_accuracy:  0.3151041666666667
+deleting edges:  106
+num deleted:  8851.0
+cpu
+next_accuracy:  0.265625
+deleting edges:  107
+num deleted:  8891.0
+cpu
+next_accuracy:  0.21223958333333334
+deleting edges:  108
+num deleted:  8922.0
+cpu
+next_accuracy:  0.31119791666666663
+deleting edges:  109
+num deleted:  8958.0
+cpu
+next_accuracy:  0.23697916666666666
+deleting edges:  110
+num deleted:  8988.0
+cpu
+next_accuracy:  0.15104166666666666
+deleting edges:  111
+num deleted:  9021.0
+cpu
+next_accuracy:  0.17057291666666666
+deleting edges:  112
+num deleted:  9053.0
+cpu
+next_accuracy:  0.16145833333333334
+deleting edges:  113
+num deleted:  9082.0
+cpu
+next_accuracy:  0.21875
+deleting edges:  114
+num deleted:  9107.0
+cpu
+next_accuracy:  0.20703124999999997
+deleting edges:  115
+num deleted:  9133.0
+cpu
+next_accuracy:  0.2903645833333333
+deleting edges:  116
+num deleted:  9163.0
+cpu
+next_accuracy:  0.29296875
+deleting edges:  117
+num deleted:  9189.0
+cpu
+next_accuracy:  0.23828125000000003
+deleting edges:  118
+num deleted:  9213.0
+cpu
+next_accuracy:  0.23958333333333331
+deleting edges:  119
+num deleted:  9235.0
+cpu
+next_accuracy:  0.23697916666666669
+deleting edges:  120
+num deleted:  9258.0
+cpu
+next_accuracy:  0.23958333333333331
+deleting edges:  121
+num deleted:  9281.0
+cpu
+next_accuracy:  0.25
+deleting edges:  122
+num deleted:  9299.0
+cpu
+next_accuracy:  0.0078125
+deleting edges:  123
+num deleted:  9315.0
+cpu
+next_accuracy:  0.20833333333333334
+deleting edges:  124
+num deleted:  9333.0
+cpu
+next_accuracy:  0.11979166666666666
+deleting edges:  125
+num deleted:  9347.0
+cpu
+next_accuracy:  0.16796875
+deleting edges:  126
+num deleted:  9363.0
+cpu
+next_accuracy:  0.27734375
+deleting edges:  127
+num deleted:  9386.0
+cpu
+next_accuracy:  0.22135416666666666
+deleting edges:  128
+num deleted:  9393.0
+cpu
+next_accuracy:  0.21354166666666666
+deleting edges:  129
+num deleted:  9408.0
+cpu
+next_accuracy:  0.24088541666666669
+deleting edges:  130
+num deleted:  9424.0
+cpu
+next_accuracy:  0.21744791666666666
+deleting edges:  131
+num deleted:  9435.0
+cpu
+next_accuracy:  0.2578125
+deleting edges:  132
+num deleted:  9445.0
+cpu
+next_accuracy:  0.125
+deleting edges:  133
+num deleted:  9459.0
+cpu
+next_accuracy:  0.2630208333333333
+deleting edges:  134
+num deleted:  9472.0
+cpu
+next_accuracy:  0.0
+deleting edges:  135
+num deleted:  9485.0
+cpu
+next_accuracy:  0.0
+deleting edges:  136
+num deleted:  9496.0
+cpu
+next_accuracy:  0.0
+deleting edges:  137
+num deleted:  9505.0
+cpu
+next_accuracy:  0.0
+deleting edges:  138
+num deleted:  9516.0
+cpu
+next_accuracy:  0.0
+deleting edges:  139
+num deleted:  9527.0
+cpu
+next_accuracy:  0.0
+deleting edges:  140
+num deleted:  9536.0
+cpu
+next_accuracy:  0.0
+deleting edges:  141
+num deleted:  9541.0
+cpu
+next_accuracy:  0.0
+deleting edges:  142
+num deleted:  9549.0
+cpu
+next_accuracy:  0.0
+deleting edges:  143
+num deleted:  9552.0
+cpu
+next_accuracy:  0.0
+deleting edges:  144
+num deleted:  9565.0
+cpu
+next_accuracy:  0.0
+deleting edges:  145
+num deleted:  9573.0
+cpu
+next_accuracy:  0.0
+deleting edges:  146
+num deleted:  9583.0
+cpu
+next_accuracy:  0.0
+deleting edges:  147
+num deleted:  9590.0
+cpu
+next_accuracy:  0.0
+deleting edges:  148
+num deleted:  9599.0
+cpu
+next_accuracy:  0.0
+deleting edges:  149
+num deleted:  9605.0
+cpu
+next_accuracy:  0.0
+deleting edges:  150
+num deleted:  9610.0
+cpu
+next_accuracy:  0.0
+deleting edges:  151
+num deleted:  9617.0
+cpu
+next_accuracy:  0.0
+deleting edges:  152
+num deleted:  9628.0
+cpu
+next_accuracy:  0.0
+deleting edges:  153
+num deleted:  9631.0
+cpu
+next_accuracy:  0.0
+deleting edges:  154
+num deleted:  9642.0
+cpu
+next_accuracy:  0.0
+deleting edges:  155
+num deleted:  9651.0
+cpu
+next_accuracy:  0.0
+deleting edges:  156
+num deleted:  9656.0
+cpu
+next_accuracy:  0.0
+deleting edges:  157
+num deleted:  9660.0
+cpu
+next_accuracy:  0.0
+deleting edges:  158
+num deleted:  9670.0
+cpu
+next_accuracy:  0.0
+deleting edges:  159
+num deleted:  9678.0
+cpu
+next_accuracy:  0.0
+deleting edges:  160
+num deleted:  9682.0
+cpu
+next_accuracy:  0.0
+deleting edges:  161
+num deleted:  9692.0
+cpu
+next_accuracy:  0.0
+deleting edges:  162
+num deleted:  9700.0
+cpu
+next_accuracy:  0.0
+deleting edges:  163
+num deleted:  9707.0
+cpu
+next_accuracy:  0.0
+deleting edges:  164
+num deleted:  9713.0
+cpu
+next_accuracy:  0.0
+deleting edges:  165
+num deleted:  9720.0
+cpu
+next_accuracy:  0.0
+deleting edges:  166
+num deleted:  9725.0
+cpu
+next_accuracy:  0.0
+deleting edges:  167
+num deleted:  9730.0
+cpu
+next_accuracy:  0.0
+deleting edges:  168
+num deleted:  9734.0
+cpu
+next_accuracy:  0.0
+deleting edges:  169
+num deleted:  9737.0
+cpu
+next_accuracy:  0.0
+deleting edges:  170
+num deleted:  9743.0
+cpu
+next_accuracy:  0.0
+deleting edges:  171
+num deleted:  9747.0
+cpu
+next_accuracy:  0.0
+deleting edges:  172
+num deleted:  9751.0
+cpu
+next_accuracy:  0.0
+deleting edges:  173
+num deleted:  9755.0
+cpu
+next_accuracy:  0.0
+deleting edges:  174
+num deleted:  9759.0
+cpu
+next_accuracy:  0.0
+deleting edges:  175
+num deleted:  9762.0
+cpu
+next_accuracy:  0.0
+deleting edges:  176
+num deleted:  9766.0
+cpu
+next_accuracy:  0.0
+deleting edges:  177
+num deleted:  9768.0
+cpu
+next_accuracy:  0.0
+deleting edges:  178
+num deleted:  9768.0
+cpu
+next_accuracy:  0.0
+deleting edges:  179
+num deleted:  9771.0
+cpu
+next_accuracy:  0.0
+deleting edges:  180
+num deleted:  9773.0
+cpu
+next_accuracy:  0.0
+deleting edges:  181
+num deleted:  9776.0
+cpu
+next_accuracy:  0.0
+deleting edges:  182
+num deleted:  9778.0
+cpu
+next_accuracy:  0.0
+deleting edges:  183
+num deleted:  9782.0
+cpu
+next_accuracy:  0.0
+deleting edges:  184
+num deleted:  9785.0
+cpu
+next_accuracy:  0.0
+deleting edges:  185
+num deleted:  9788.0
+cpu
+next_accuracy:  0.0
+deleting edges:  186
+num deleted:  9792.0
+cpu
+next_accuracy:  0.0
+deleting edges:  187
+num deleted:  9794.0
+cpu
+next_accuracy:  0.0
+deleting edges:  188
+num deleted:  9794.0
+cpu
+next_accuracy:  0.0
+deleting edges:  189
+num deleted:  9798.0
+cpu
+next_accuracy:  0.0
+deleting edges:  190
+num deleted:  9801.0
+cpu
+next_accuracy:  0.0
+deleting edges:  191
+num deleted:  9803.0
+cpu
+next_accuracy:  0.0
+deleting edges:  192
+num deleted:  9804.0
+cpu
+next_accuracy:  0.0
+deleting edges:  193
+num deleted:  9808.0
+cpu
+next_accuracy:  0.0
+deleting edges:  194
+num deleted:  9813.0
+cpu
+next_accuracy:  0.0
+deleting edges:  195
+num deleted:  9814.0
+cpu
+next_accuracy:  0.0
+deleting edges:  196
+num deleted:  9816.0
+cpu
+next_accuracy:  0.0
+deleting edges:  197
+num deleted:  9820.0
+cpu
+next_accuracy:  0.0
+deleting edges:  198
+num deleted:  9823.0
+cpu
+next_accuracy:  0.0
+deleting edges:  199
+num deleted:  9829.0
+cpu
+next_accuracy:  0.0

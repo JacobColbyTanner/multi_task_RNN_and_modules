@@ -420,7 +420,60 @@ def spatial_embed(weight_matrix, se1=0.3, comms_factor=1):
 
 import copy
 
-def train_simultaneous_integration(tasks,steps,lr):
+def integrate_tasks(tasks,o1):
+    dt = 100
+    num_tasks = len(tasks)
+    seq_len = 100
+    timing = {
+        'fixation': 100,
+        'stimulus': 2000,
+        'delay': np.random.randint(200,high=600),
+        'decision': 100}
+    kwargs = {'dt': dt, 'timing':timing}
+    dataset1 = {}
+    for task in range(num_tasks):
+        dataset1[task] = ngym.Dataset(tasks[task], env_kwargs=kwargs, batch_size=16,
+                    seq_len=seq_len)
+        data = dataset1[task]
+        inputs1, labels1 = data()
+        
+        if task == 0:
+            inputs = inputs1
+        else:
+            inputs = np.concatenate((inputs,inputs1), axis=2)
+            
+        if task == 0:
+            labels = labels1
+            labels = np.expand_dims(labels, axis=2)
+        else:
+            labels1 = np.expand_dims(labels1, axis=2)
+            labels = np.concatenate((labels,labels1), axis=2)
+        
+            
+    inputs = torch.from_numpy(inputs).type(torch.float)
+
+
+    new_labels = np.zeros(labels1.shape)
+    for ii in range(labels.shape[0]):
+        for batch in range(labels.shape[1]):
+            L = labels[ii,batch,:]
+            
+            
+
+            label_tensor = np.zeros(tuple(o1.astype(int)))
+            label_tensor[tuple(L)] = 1
+            
+            label_tensor = label_tensor.flatten()
+            ind = np.nonzero(label_tensor)
+            new_labels[ii,batch] = ind[0]
+        
+        
+    labels = torch.from_numpy(new_labels.flatten()).type(torch.long)
+
+    return inputs, labels
+
+
+def train_simultaneous_integration(tasks,accuracy_goal,lr):
     
     """function to train the model on multiple tasks.
    
@@ -441,9 +494,7 @@ def train_simultaneous_integration(tasks,steps,lr):
     device = torch.device(dev) 
     # set tasks
     dt = 100
-    #tasks = ["SineWavePred-v0","GoNogo-v0","PerceptualDecisionMaking-v0"]
     
-    #tasks = ["GoNogo-v0","PerceptualDecisionMaking-v0"]
     num_tasks = len(tasks)
     kwargs = {'dt': dt}
     seq_len = 100
@@ -491,65 +542,15 @@ def train_simultaneous_integration(tasks,steps,lr):
 
 
    
-    loss_trajectory = np.zeros([steps])
-    
+    loss_trajectory = []
+    accuracy = 0
     running_loss = 0
-    for i in range(steps):
+    i = 0
+    #for i in range(steps):
+    while accuracy < accuracy_goal:
+        i = i+1
         # Generate input and target(labels) for all tasks, then concatenate and convert to pytorch tensor
-        
-        
-        
-        timing = {
-            'fixation': 100,
-            'stimulus': 2000,
-            'delay': np.random.randint(200,high=600),
-            'decision': 100}
-        kwargs = {'dt': dt, 'timing':timing}
-        
-        for task in range(num_tasks):
-            dataset1[task] = ngym.Dataset(tasks[task], env_kwargs=kwargs, batch_size=16,
-                       seq_len=seq_len)
-            data = dataset1[task]
-            inputs1, labels1 = data()
-            
-            if task == 0:
-                inputs = inputs1
-            else:
-                inputs = np.concatenate((inputs,inputs1), axis=2)
-                
-            if task == 0:
-                labels = labels1
-                labels = np.expand_dims(labels, axis=2)
-            else:
-                labels1 = np.expand_dims(labels1, axis=2)
-                labels = np.concatenate((labels,labels1), axis=2)
-            
-                
-        inputs = torch.from_numpy(inputs).type(torch.float).to(device)
-        
-        
-        new_labels = np.zeros(labels1.shape)
-        for ii in range(labels.shape[0]):
-            for batch in range(labels.shape[1]):
-                L = labels[ii,batch,:]
-                
-                
-
-                label_tensor = np.zeros(tuple(o1.astype(int)))
-                label_tensor[tuple(L)] = 1
-                
-                label_tensor = label_tensor.flatten()
-                ind = np.nonzero(label_tensor)
-                new_labels[ii,batch] = ind[0]
-            
-            
-        labels = torch.from_numpy(new_labels.flatten()).type(torch.long).to(device)
-
-        #for task in range(num_tasks):
-            
-
-        #plt.plot(labels)
-        #plt.show()
+        inputs, labels = integrate_tasks(tasks,o1)
         
        
        
@@ -569,7 +570,7 @@ def train_simultaneous_integration(tasks,steps,lr):
         loss.backward()
         optimizer.step()    # Does the update
 
-        loss_trajectory[i] = loss.item()
+        loss_trajectory.append(loss.item())
        
         # Compute the running loss every 100 steps
         running_loss += loss.item()
@@ -578,9 +579,194 @@ def train_simultaneous_integration(tasks,steps,lr):
             print('Step {}, Loss {:0.4f}, Time {:0.1f}s'.format(
                 i+1, running_loss, time.time() - start_time))
             print("loss, no distance: ",loss1,flush=True)
+            predicted_labels = torch.argmax(output, dim=1)
+            mask = labels != 0
+            filtered_labels = labels[mask]
+            filtered_pred = predicted_labels[mask]
+            accuracy = np.nanmean((filtered_labels  == filtered_pred))
             running_loss = 0
+            print("Accuracy: ", accuracy)
             
     return net, loss_trajectory
+
+
+def train_simultaneous_integration_staged(net,tasks,steps,lr,HW_mask,freeze):
+    
+    """function to train the model on multiple tasks.
+   
+    Args:
+        net: a pytorch nn.Module module
+        dataset: a dataset object that when called produce a (input, target output) pair
+   
+    Returns:
+        net: network object after training
+    """
+   
+    if torch.cuda.is_available(): 
+        dev = "cuda:0" 
+        print(dev)
+    else: 
+        dev = "cpu" 
+        print(dev)
+    device = torch.device(dev) 
+    # set tasks
+    dt = 100
+    
+    num_tasks = len(tasks)
+    kwargs = {'dt': dt}
+    seq_len = 100
+
+    # Make supervised datasets
+    i1 = np.zeros([num_tasks])
+    o1 = np.zeros([num_tasks])
+    dataset1 = {}
+    for task in range(num_tasks):
+      
+        dataset1[task] = ngym.Dataset(tasks[task], env_kwargs=kwargs, batch_size=16,
+                       seq_len=seq_len)
+       
+                   #get input and output sizes for different tasks
+        env = dataset1[task].env
+        i1[task] = env.observation_space.shape[0]
+        try:
+            o1[task] = int(env.action_space.n)
+        except:
+            o1[task] = int(env.action_space.shape[0])
+
+
+    input_size = int(np.sum(i1))
+    #to create a tensor object that is AxBxCxD.. etc
+    output_size = int(np.prod(o1))
+    hidden_size = 150
+   
+   
+    net_new = RNNNet(input_size=input_size, hidden_size=hidden_size,
+             output_size=output_size, dt=dt)
+   
+
+
+    IW = net.rnn.input2h.weight.detach().numpy()
+    HW = net.rnn.h2h.weight_orig.detach().numpy()
+
+    scaling_factor = 0.01  # or some small value
+    IW_add = np.random.randn(50,IW.shape[1])*scaling_factor
+    HW_add = np.random.randn(50,HW.shape[1])*scaling_factor
+    HW_add2 = np.random.randn(HW.shape[0]+50,50)*scaling_factor
+    IW_new = np.concatenate((IW,IW_add), axis=0)
+    HW_new = np.concatenate((HW,HW_add), axis=0)
+    HW_new = np.concatenate((HW_new,HW_add2), axis=1)
+
+    net_new.rnn.input2h.weight = torch.nn.Parameter(torch.from_numpy(IW_new).float())
+    net_new.rnn.h2h.weight = torch.nn.Parameter(torch.from_numpy(HW_new).float())
+
+        #apply pruning mask
+    M = HW_mask
+    M_add = np.ones((50,HW.shape[1]))
+    M_add2 = np.ones((HW.shape[0]+50,50))
+    proto_mask = np.concatenate((M,M_add),axis=0)
+    proto_mask = np.concatenate((proto_mask,M_add2),axis=1)
+    mask = torch.from_numpy(proto_mask).to(device)
+    apply = prune.custom_from_mask(net_new.rnn.h2h, name = "weight", mask = mask)
+
+    
+    MM = np.zeros((150,IW.shape[1]))
+    MM[0:100,:] = 1
+    mask_IW = torch.from_numpy(MM).to(device)
+    apply = prune.custom_from_mask(net_new.rnn.input2h, name = "weight", mask = mask_IW)
+    
+    
+    
+
+    
+
+    # Use Adam optimizer
+    optimizer = optim.Adam(net_new.parameters(), lr=lr)
+    criterion = nn.CrossEntropyLoss()
+    
+    
+    start_time = time.time()
+
+
+   
+    loss_trajectory = np.zeros(steps)
+    accuracy = np.zeros(steps)
+    running_loss = 0
+   
+    for i in range(steps):
+        
+    
+        
+        # Generate input and target(labels) for all tasks, then concatenate and convert to pytorch tensor
+        inputs, labels = integrate_tasks(tasks,o1)
+        
+       
+       
+        # boiler plate pytorch training:
+        optimizer.zero_grad()   # zero the gradient buffers
+        
+        output, hidden = net_new(inputs)
+        
+        '''
+        print("outputs: ", output)
+        H = output[:,0,:].detach().numpy().squeeze()
+        plt.figure()
+        plt.imshow(H)
+        plt.colorbar()
+        plt.savefig("figures/output_state.png")
+
+        H = hidden[:,0,:].detach().numpy().squeeze()
+        plt.figure()
+        plt.imshow(H)
+        plt.colorbar()
+        plt.savefig("figures/hidden_state.png")
+        '''
+
+        # Reshape to (SeqLen x Batch, OutputSize)
+        output = output.view(-1, output_size)
+       
+        #print("output shape: " + str(output.shape))
+        #print("labels shape: " + str(labels.shape))
+
+        loss = criterion(output, labels)
+        
+        loss.backward()
+
+        if freeze == True:
+            # Apply the mask to freeze certain elements
+            old_weights = np.zeros((150,150))
+            old_weights[0:100,0:100] = 1
+            net_new.rnn.h2h.weight_orig.grad[old_weights] = 0
+            old_weights = np.zeros((150,IW.shape[1]))
+            old_weights[0:100,:] = 1
+            net_new.rnn.input2h.weight_orig.grad[old_weights] = 0
+
+
+        
+
+
+        optimizer.step()    # Does the update
+
+        loss_trajectory[i] = loss.item()
+       
+        predicted_labels = torch.argmax(output, dim=1)
+        mask = labels != 0
+        filtered_labels = labels[mask]
+        filtered_pred = predicted_labels[mask]
+        accuracy[i] = np.nanmean((filtered_labels  == filtered_pred))
+
+
+        # Compute the running loss every 100 steps
+        running_loss += loss.item()
+        if i % 100 == 99:
+            running_loss /= 100
+            print('Step {}, Loss {:0.4f}, Time {:0.1f}s'.format(
+                i+1, running_loss, time.time() - start_time),flush=True)
+            running_loss = 0
+            print("Accuracy: ", accuracy[i])
+            
+    return net, loss_trajectory, accuracy
+
+
 
 def get_accuracy_integration(net,tasks,hidden_size):
     """function to train the model on multiple tasks.
@@ -632,23 +818,11 @@ def get_accuracy_integration(net,tasks,hidden_size):
     output_size = int(np.prod(o1))
     hidden_size = 100
    
-   
-    net = RNNNet(input_size=input_size, hidden_size=hidden_size,
-             output_size=output_size, dt=dt)
-   
-    net.to(device)
-    '''
-        #apply pruning mask
-    mask = torch.from_numpy(mask).to(device)
-    apply = prune.custom_from_mask(net.rnn.h2h, name = "weight", mask = mask)
-    '''
 
 
-    
- 
-    accuracy_bunch = []
+    steps = 4
 
-    steps = 200
+    accuracy_bunch = np.zeros(steps)
 
     for i in range(steps):
         # Generate input and target(labels) for all tasks, then concatenate and convert to pytorch tensor
@@ -712,33 +886,140 @@ def get_accuracy_integration(net,tasks,hidden_size):
         # Assuming outputs and labels are already defined:
         predicted_labels = torch.argmax(output, dim=1)
 
-        # Create a mask where predicted_labels are not 0 or 12 (which are fixation outputs that shouldn't be counted)
-        fixations = [0]
-        masks = []
-        for task in range(num_tasks):
-            if task > 0:
-                fixations.append(int(i1[task-1])+1)
-            masks.append(predicted_labels != fixations[task])
-
-        if num_tasks == 3:
-            mask = masks[0] & masks[1] & masks[2]
-        elif num_tasks == 2:
-            mask = masks[0] & masks[1]
-
-        # Use the mask to filter predicted_labels and labels
-        filtered_preds = predicted_labels[mask]
+       #don't count fixation periods
+        mask = labels != 0
         filtered_labels = labels[mask]
-        
-        
-        accuracy_bunch.append(np.nanmean((filtered_preds == filtered_labels).float()))
+        filtered_pred = predicted_labels[mask]
+  
+        accuracy_bunch[i] = np.nanmean((filtered_labels  == filtered_pred))
 
-    print("accuracy bunch: ",accuracy_bunch)
-    accuracy = np.nanmean(np.array(accuracy_bunch))
+    
+    accuracy = accuracy_bunch
     
    
     return accuracy
 
 
+
+
+def get_activity_integration(net,tasks):
+    """function to train the model on multiple tasks.
+   
+    Args:
+        net: a pytorch nn.Module module
+        dataset: a dataset object that when called produce a (input, target output) pair
+   
+    Returns:
+        net: network object after training
+    """
+    
+    if torch.cuda.is_available(): 
+        dev = "cuda:0" 
+        print(dev)
+    else: 
+        dev = "cpu" 
+        print(dev)
+    device = torch.device(dev) 
+    # set tasks
+    dt = 100
+    #tasks = ["SineWavePred-v0","GoNogo-v0","PerceptualDecisionMaking-v0"]
+    
+    #tasks = ["GoNogo-v0","PerceptualDecisionMaking-v0"]
+    num_tasks = len(tasks)
+    kwargs = {'dt': dt}
+    seq_len = 100
+
+    # Make supervised datasets
+    i1 = np.zeros([num_tasks])
+    o1 = np.zeros([num_tasks])
+    dataset1 = {}
+    for task in range(num_tasks):
+      
+        dataset1[task] = ngym.Dataset(tasks[task], env_kwargs=kwargs, batch_size=16,
+                       seq_len=seq_len)
+       
+                   #get input and output sizes for different tasks
+        env = dataset1[task].env
+        i1[task] = env.observation_space.shape[0]
+        try:
+            o1[task] = int(env.action_space.n)
+        except:
+            o1[task] = int(env.action_space.shape[0])
+
+
+    input_size = int(np.sum(i1))
+    #to create a tensor object that is AxBxCxD.. etc
+    output_size = int(np.prod(o1))
+    hidden_size = 100
+   
+
+
+    steps = 1
+
+    
+
+    for i in range(steps):
+        # Generate input and target(labels) for all tasks, then concatenate and convert to pytorch tensor
+        
+        
+        
+        timing = {
+            'fixation': 100,
+            'stimulus': 2000,
+            'delay': np.random.randint(200,high=600),
+            'decision': 100}
+        kwargs = {'dt': dt, 'timing':timing}
+        
+        for task in range(num_tasks):
+            dataset1[task] = ngym.Dataset(tasks[task], env_kwargs=kwargs, batch_size=16,
+                       seq_len=seq_len)
+            data = dataset1[task]
+            inputs1, labels1 = data()
+            
+            if task == 0:
+                inputs = inputs1
+            else:
+                inputs = np.concatenate((inputs,inputs1), axis=2)
+                
+            if task == 0:
+                labels = labels1
+                labels = np.expand_dims(labels, axis=2)
+            else:
+                labels1 = np.expand_dims(labels1, axis=2)
+                labels = np.concatenate((labels,labels1), axis=2)
+            
+                
+        inputs = torch.from_numpy(inputs).type(torch.float).to(device)
+        
+        
+        new_labels = np.zeros(labels1.shape)
+        for ii in range(labels.shape[0]):
+            for batch in range(labels.shape[1]):
+                L = labels[ii,batch,:]
+                
+                
+
+                label_tensor = np.zeros(tuple(o1.astype(int)))
+                label_tensor[tuple(L)] = 1
+                
+                label_tensor = label_tensor.flatten()
+                ind = np.nonzero(label_tensor)
+                new_labels[ii,batch] = ind[0]
+            
+            
+        labels = new_labels
+
+        #for task in range(num_tasks):
+            
+
+
+        output, activity = net(inputs)
+        
+       
+        
+    
+   
+    return activity, output, inputs, labels
 
 
 
@@ -959,7 +1240,7 @@ def get_accuracy_per_task(net,tasks,hidden_size,batch_size,num_runs):
    
     start_time = time.time()
    
-    accuracy_task = np.zeros([3,num_runs])
+    accuracy_task = np.zeros([num_tasks,num_runs])
     
    
     count = 0
@@ -1056,7 +1337,7 @@ def get_accuracy_per_task(net,tasks,hidden_size,batch_size,num_runs):
            
  
        
-        for task in range(3):
+        for task in range(num_tasks):
             
             inputs = torch.from_numpy(inputs1[task]).type(torch.float)
             output, rnn_activity = net(inputs)
@@ -1099,21 +1380,19 @@ def get_accuracy_per_task(net,tasks,hidden_size,batch_size,num_runs):
             predicted_labels = torch.argmax(output, dim=1)
 
             # Create a mask where predicted_labels are not 0 or 12 (which are fixation outputs that shouldn't be counted)
-            fixations = [0]
-            masks = []
-            for task in range(num_tasks):
-                if task > 0:
-                    fixations.append(int(i1[task-1])+1)
-                masks.append(predicted_labels != fixations[task])
-
-            if num_tasks == 3:
-                mask = masks[0] & masks[1] & masks[2]
-            elif num_tasks == 2:
-                mask = masks[0] & masks[1]
+            if task == 0:
+                fixation = 0
+            else:
+                fixation = int(i1[task-1])
+            
+            
+            mask = labels != fixation
+            
 
             # Use the mask to filter predicted_labels and labels
             filtered_preds = predicted_labels[mask]
             filtered_labels = labels[mask]
+            
             
           
             if filtered_preds.nelement() == 0:
@@ -1469,6 +1748,44 @@ def lesion_rnn_mask(model,mask):
 
     return lesioned_model
 
+def lesion_rnn_mask2(model,mask2):
+    """
+    Lesion an RNN model at the given neuron index.
+
+    Parameters:
+    - model (torch.nn.Module): The PyTorch RNN model to lesion.
+    - neuron_index (int): The index of the neuron to lesion.
+
+    Returns:
+    - torch.nn.Module: A new PyTorch RNN model with the specified neuron lesioned.
+    """
+    
+    it = model.rnn.input2h.weight.detach().numpy()
+    ot = model.fc.weight.detach().numpy()
+    input_size = it.shape[1]
+    output_size = ot.shape[0]
+    hidden_size = 100
+    dt = 100
+
+    # Clone the original model
+    
+    lesioned_model = RNNNet(input_size=input_size, hidden_size=hidden_size,
+             output_size=output_size, dt=dt)
+    mask = np.ones((100,100))
+    mask = torch.from_numpy(mask)
+    apply = prune.custom_from_mask(lesioned_model.rnn.h2h, name = "weight", mask = mask)
+    
+    # Load the original weights into this new instance
+    lesioned_model.load_state_dict(model.state_dict())
+
+    # Lesion the weights for the neuron in the hidden-to-hidden transition
+    lesioned_model.rnn.h2h.weight_orig.data[mask2] = 0.0
+   
+
+
+    return lesioned_model
+
+
 from scipy.optimize import linear_sum_assignment
 import networkx as nx
 
@@ -1492,10 +1809,10 @@ def SC_modules_thalamic_bias(off_block, thalamic_bias,tasks):
    # lt.show()
 
 
-    steps = 500
+    steps = 1000
     mask = gg
     randomize_task_order = 1
-    lr = 0.01
+    lr = 0.001
     hidden_size = 100
     batch_size = 16
     num_runs = 1
@@ -1558,8 +1875,154 @@ def SC_modules_thalamic_bias(off_block, thalamic_bias,tasks):
     
     print("OSQ",optimal_specialization_quotient)
     
-    return net_modules, specialization_quotient, optimal_specialization_quotient
+    return net_modules, specialization_quotient, optimal_specialization_quotient, mask
 
+def SC_modules_thalamic_bias2(off_block, thalamic_bias,tasks):
+     #create modular pruning mask with stochastic block model
+    sizes = [50,50]
+    #off_block = 0.1
+    probs = [[1, off_block],[off_block, 1]]
+    g = nx.stochastic_block_model(sizes,probs,directed=True)
+    gg = nx.to_numpy_array(g)
+
+    
+    np.fill_diagonal(gg, 1)
+
+    #plt.imshow(gg)
+    #plt.colorbar()
+   # lt.show()
+
+
+    steps = 1000
+    mask = gg
+    randomize_task_order = 1
+    lr = 0.001
+    hidden_size = 100
+    batch_size = 16
+    num_runs = 1
+    
+
+    IW = np.random.randn(100,6)
+
+    #thalamic_bias = 3
+
+    IW[0:50,0:3] += thalamic_bias
+    IW[50:100,3:6] += thalamic_bias
+    
+
+    #plt.imshow(IW)
+    #plt.colorbar()
+    #plt.show()
+
+    input_weights = IW
+    
+    net_modules, loss_trajectory = train_multitask2(tasks,steps,mask,lr,randomize_task_order, input_weights)
+
+    A = np.zeros((2,2))
+
+    start_end = [0, 50]
+    lesioned_model = lesion_rnn(net_modules,start_end)
+    A[0,:],accuracy_task = get_accuracy_per_task(lesioned_model,tasks,hidden_size,batch_size,num_runs)
+
+    start_end = [50, 100]
+    lesioned_model = lesion_rnn(net_modules,start_end)
+    A[1,:],accuracy_task = get_accuracy_per_task(lesioned_model,tasks,hidden_size,batch_size,num_runs)
+
+    
+
+
+
+    print("A",A)
+    D = np.mean(A.diagonal())
+    i, j = np.indices(A.shape)
+    off_diagonal = A[i != j]
+    ND = np.mean(off_diagonal)
+
+    specialization_quotient = ND-D
+
+    print("SQ",specialization_quotient)
+    
+    
+    row_indices, col_indices = linear_sum_assignment(A)
+    optimal_A = A[:, col_indices]
+    
+    
+    D = np.mean(optimal_A.diagonal())
+    i, j = np.indices(optimal_A.shape)
+    off_diagonal = optimal_A[i != j]
+    ND = np.mean(off_diagonal)
+
+    optimal_specialization_quotient = ND-D
+    
+    print("OSQ",optimal_specialization_quotient)
+    
+    return net_modules, specialization_quotient, optimal_specialization_quotient, mask
+
+
+def SC_modules_thalamic_bias_off_block_lesion(off_block, thalamic_bias,tasks):
+     #create modular pruning mask with stochastic block model
+    sizes = [33,33,34]
+    #off_block = 0.1
+    probs = [[1, off_block,off_block],[off_block, 1, off_block],[off_block,off_block, 1]]
+    g = nx.stochastic_block_model(sizes,probs,directed=True)
+    gg = nx.to_numpy_array(g)
+
+    
+    np.fill_diagonal(gg, 1)
+
+    #plt.imshow(gg)
+    #plt.colorbar()
+   # lt.show()
+
+
+    steps = 500
+    mask = gg
+    randomize_task_order = 1
+    lr = 0.01
+    hidden_size = 100
+    batch_size = 16
+    num_runs = 1
+    
+
+    IW = np.random.randn(100,12)
+
+    #thalamic_bias = 3
+
+    IW[0:33,0:3] += thalamic_bias
+    IW[33:66,3:6] += thalamic_bias
+    IW[66:100,6:12] += thalamic_bias
+
+    #plt.imshow(IW)
+    #plt.colorbar()
+    #plt.show()
+
+    input_weights = IW
+    
+    net_modules, loss_trajectory = train_multitask2(tasks,steps,mask,lr,randomize_task_order, input_weights)
+
+    A_real,accuracy_task = get_accuracy_per_task(net_modules,tasks,hidden_size,batch_size,num_runs)
+
+    off_block = 0
+    probs = [[1, off_block,off_block],[off_block, 1, off_block],[off_block,off_block, 1]]
+    g = nx.stochastic_block_model(sizes,probs,directed=True)
+    gg = nx.to_numpy_array(g)
+    np.fill_diagonal(gg, 1)
+
+    mask2 = gg == 0
+    #plt.imshow(mask2)
+    #plt.savefig("figures/mask2.png")
+    #plt.show()
+    
+
+    lesioned_model = lesion_rnn_mask2(net_modules,mask2)
+    A_lesion,accuracy_task = get_accuracy_per_task(lesioned_model,tasks,hidden_size,batch_size,num_runs)
+
+    A_diff = A_real-A_lesion
+
+
+    print("A",A_diff)
+    
+    return A_diff, A_real, A_lesion
 
 
 

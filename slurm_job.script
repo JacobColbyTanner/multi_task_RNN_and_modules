@@ -18,5 +18,5 @@
 module load python/gpu/3.10.10
 
 #Run your program
-srun python main_sim_integration.py
+srun python staged_development.py
 

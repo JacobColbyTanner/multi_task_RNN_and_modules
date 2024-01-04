@@ -1,4 +1,3 @@
-
 import numpy
 import functions
 import neurogym 
@@ -63,41 +62,42 @@ dt = 100
 kwargs = {'dt': dt}
 seq_len = 100
 
-
+num_tasks = 3
 
 off_block = [0,0.125,0.25,0.5,1]
 thalamic_bias = [0,1,2,3]
 
 ob_S = len(off_block)
 tb_S = len(thalamic_bias)
-specialization_quotient = np.zeros((100,ob_S,tb_S))
-optimal_specialization_quotient = np.zeros((100,ob_S,tb_S))
-phase_space_distances_all = np.zeros((100,ob_S,tb_S))
+A_diff = np.zeros((100,num_tasks,ob_S,tb_S))
+A_diff_mean = np.zeros((100,ob_S,tb_S))
 
 for iter in range(100):
     print("-------------------------------iteration: ",iter,flush=True)
     
-    np.save("data/SQ.npy",specialization_quotient)
-    np.save("data/OSQ.npy",optimal_specialization_quotient)
-    np.save("data/phase_distance.npy",phase_space_distances_all)
+    np.save("data/A_diff.npy",A_diff)
+    np.save("data/A_diff_mean.npy",A_diff_mean) 
+
+
     for ob in range(ob_S):
         for tb in range(tb_S):
             start_time = time.time()
 
-            net_modules,specialization_quotient[iter,ob,tb], optimal_specialization_quotient[iter,ob,tb] = functions.SC_modules_thalamic_bias(off_block[ob], thalamic_bias[tb],tasks)
-
-            phase_space_dist = functions.get_phase_distance(net_modules,tasks)
-
-            dd = np.triu(phase_space_dist, k=1)
-
-            phase_space_distances_all[iter,ob,tb] = np.sum(dd)
-
+            A_diff[iter,:,ob,tb], A_real, A_lesion = functions.SC_modules_thalamic_bias_off_block_lesion(off_block[ob], thalamic_bias[tb],tasks)
+            A_diff_mean[iter,ob,tb] = np.nanmean(A_diff[iter,:,ob,tb])
+            print("A_real: ",A_real)
+            print("A_lesion: ",A_lesion)
             end_time = time.time()
             elapsed_time = end_time - start_time
 
             print("time: ",elapsed_time,flush=True)
 
             
+
+
+
+
+
 
 
 
